@@ -2,7 +2,7 @@ name: CMake Build Matrix
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "other" ]
     paths-ignore:
       - 'dist/**'
       - 'doc/**'
