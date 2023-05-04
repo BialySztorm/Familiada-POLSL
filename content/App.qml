@@ -4,17 +4,95 @@
 import QtQuick 6.2
 import Familiada
 
+
+
 Window {
-    width: mainScreen.width
-    height: mainScreen.height
+
+    id:root
+    width: parent.width
+    height: parent.height
+    minimumWidth: Constants.width
+    minimumHeight: Constants.height
 
     visible: true
     title: "Familiada"
 
-    Screen01_Main {
+    function changeState(stateName)
+    {
+        screens.state = stateName
+//        console.log(stateName)
+    }
+
+    Screen01_Main{
         id: mainScreen
-        x: 173
-        y: -188
+        visible: true
+        anchors.fill: parent
+    }
+    Screen02_Settings{
+        id: settingsScreen
+        visible:false
+        anchors.fill: parent
+    }
+    Screen03_Game{
+        id: gameScreen
+        visible:false
+        anchors.fill: parent
+    }
+
+
+    StateGroup {
+        id: screens
+        state: "screen1"
+        states: [
+            State {
+                name: "screen1"
+                PropertyChanges {
+                    target: mainScreen
+                    visible:true
+                }
+                PropertyChanges {
+                    target: settingsScreen
+                    visible:false
+                }
+                PropertyChanges {
+                    target: gameScreen
+                    visible:false
+                }
+
+            },
+            State {
+                name: "screen2"
+                PropertyChanges {
+                    target: mainScreen
+                    visible:false
+                }
+                PropertyChanges {
+                    target: settingsScreen
+                    visible:true
+                }
+                PropertyChanges {
+                    target: gameScreen
+                    visible:false
+                }
+
+            },
+            State {
+                name: "screen3"
+                PropertyChanges {
+                    target: mainScreen
+                    visible:false
+                }
+                PropertyChanges {
+                    target: settingsScreen
+                    visible:false
+                }
+                PropertyChanges {
+                    target: gameScreen
+                    visible:true
+                }
+
+            }
+        ]
     }
 
 }
