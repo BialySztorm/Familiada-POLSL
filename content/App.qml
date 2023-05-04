@@ -4,14 +4,14 @@
 import QtQuick 6.2
 import Familiada
 
-WindowMain {
+Window {
     width: mainScreen.width
     height: mainScreen.height
 
     visible: true
     title: "Familiada"
 
-    Main {
+    Screen01_Main {
         id: mainScreen
         x: 173
         y: -188

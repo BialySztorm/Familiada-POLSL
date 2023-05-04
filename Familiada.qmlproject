@@ -107,5 +107,5 @@ Project {
     primaryLanguage: "en"
 
 
-    mainUiFile: "content/Main.ui.qml"
+    mainUiFile: "content/Screen01_Main.ui.qml"
 }
