@@ -59,18 +59,30 @@ Item {
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
             }
         }
+        Button {
+            id: controlsBtn
+            text: qsTr("Show controls")
+            anchors.left: parent.left
+            anchors.bottom: parent.bottom
+            font.pointSize: parent.width / 50
+            anchors.bottomMargin: parent.width / 50
+            anchors.leftMargin: parent.width / 50
+            Connections {
+                target: controlsBtn
+                onClicked: root.changeState("screen1")
+            }
+        }
 
         Button {
-            id: button
-            x: 0
-            y: 0
+            id: returnBtn
             text: qsTr("Return to menu")
             anchors.right: parent.right
             anchors.bottom: parent.bottom
-            anchors.bottomMargin: parent.width / 20
-            anchors.rightMargin: parent.width / 20
+            font.pointSize: parent.width / 50
+            anchors.bottomMargin: parent.width / 50
+            anchors.rightMargin: parent.width / 50
             Connections {
-                target: button
+                target: returnBtn
                 onClicked: root.changeState("screen1")
             }
         }

@@ -17,15 +17,28 @@ Rectangle {
 
     color: Constants.backgroundColor
 
-    Text {
-        id: text1
+    Column {
+        id: column1
+        width: 400
+        height: 400
         anchors.verticalCenter: parent.verticalCenter
-        anchors.verticalCenterOffset: 0
-        anchors.horizontalCenterOffset: 0
         anchors.horizontalCenter: parent.horizontalCenter
-        width: 228
-        height: 146
-        text: qsTr("Joke")
-        font.pixelSize: 60
+        Text {
+            id: text1
+            text: qsTr("Tittle")
+            font.pixelSize: 30
+        }
+        Text {
+            id: text2
+            text: qsTr("Joke")
+            font.pixelSize: 30
+        }
+        Text {
+            id: text3
+            text: qsTr("Author")
+            anchors.right: parent.right
+            font.pixelSize: 30
+            anchors.rightMargin: parent.width / 50
+        }
     }
 }

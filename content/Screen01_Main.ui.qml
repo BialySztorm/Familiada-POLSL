@@ -21,9 +21,11 @@ Item {
         Button {
             id: startBtn
             text: qsTr("Start Game")
+            anchors.left: parent.left
+            anchors.bottom: parent.bottom
+            anchors.leftMargin: parent.width/50
+            anchors.bottomMargin: parent.width/50
             font.pointSize: parent.width / 50
-            anchors.verticalCenter: parent.verticalCenter
-            anchors.horizontalCenter: parent.horizontalCenter
 
             Connections {
                 target: startBtn
@@ -33,10 +35,11 @@ Item {
         Button {
             id: optionsBtn
             text: qsTr("Options")
+            anchors.right: parent.right
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: parent.width/50
+            anchors.rightMargin: parent.width/50
             font.pointSize: parent.width / 50
-            anchors.verticalCenter: startBtn.verticalCenter
-            anchors.verticalCenterOffset: parent.width / 50 * 3
-            anchors.horizontalCenter: parent.horizontalCenter
 
             Connections {
                 target: optionsBtn
