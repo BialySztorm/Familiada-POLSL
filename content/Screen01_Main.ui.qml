@@ -12,6 +12,9 @@ import Familiada
 
 Item {
     id: screen1
+
+
+
     Rectangle {
         id: rectangle
         width: parent.width
@@ -23,8 +26,8 @@ Item {
             text: qsTr("Start Game")
             anchors.left: parent.left
             anchors.bottom: parent.bottom
-            anchors.leftMargin: parent.width/50
-            anchors.bottomMargin: parent.width/50
+            anchors.leftMargin: parent.width / 50
+            anchors.bottomMargin: parent.width / 50
             font.pointSize: parent.width / 50
 
             Connections {
@@ -37,8 +40,8 @@ Item {
             text: qsTr("Options")
             anchors.right: parent.right
             anchors.bottom: parent.bottom
-            anchors.bottomMargin: parent.width/50
-            anchors.rightMargin: parent.width/50
+            anchors.bottomMargin: parent.width / 50
+            anchors.rightMargin: parent.width / 50
             font.pointSize: parent.width / 50
 
             Connections {

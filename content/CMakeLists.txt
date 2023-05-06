@@ -7,10 +7,12 @@ qt6_add_qml_module(content
     VERSION 1.0
     QML_FILES
         App.qml
+        Joke.qml
         Screen01_Main.ui.qml
         Screen02_Settings.ui.qml
         Screen03_Game.ui.qml
         Screen04_Joke.ui.qml
+        Screen05_Controls.ui.qml
     RESOURCES
         fonts/fonts.txt
         images/StrasburgerIco.ico

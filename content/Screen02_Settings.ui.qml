@@ -12,6 +12,7 @@ import Familiada
 
 Item {
     id: screen02
+
     Rectangle {
         id: rectangle
         width: parent.width
@@ -22,6 +23,7 @@ Item {
         GridLayout {
             id: grid
             anchors.verticalCenter: parent.verticalCenter
+            rowSpacing: 10
             anchors.horizontalCenter: parent.horizontalCenter
             columns: 2
             Text {
@@ -34,16 +36,17 @@ Item {
             Text {
                 id: musicVolumeText
                 text: qsTr("Music Volume")
-                font.pixelSize: 12
+                font.pointSize: parent.parent.width / 50
             }
             Slider {
                 id: musicVolumeSlider
                 value: 0.5
+                onMoved: player.audioOutput.volume = this.value
             }
             Text {
                 id: sfxVolumeText
                 text: qsTr("Effects Volume")
-                font.pixelSize: 12
+                font.pixelSize: parent.parent.width / 50
             }
             Slider {
                 id: sfxVolumeSlider
@@ -52,7 +55,7 @@ Item {
             Text {
                 id: languageText
                 text: qsTr("Language")
-                font.pixelSize: 12
+                font.pixelSize: parent.parent.width / 50
             }
             ComboBox {
                 id: languageComboBox
@@ -69,7 +72,7 @@ Item {
             anchors.leftMargin: parent.width / 50
             Connections {
                 target: controlsBtn
-                onClicked: root.changeState("screen1")
+                onClicked: root.toggleControls()
             }
         }
 

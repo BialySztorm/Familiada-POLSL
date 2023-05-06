@@ -2,15 +2,14 @@
 // SPDX-License-Identifier: LicenseRef-Qt-Commercial OR GPL-3.0-only
 
 import QtQuick 6.2
+import QtMultimedia
+import QtQuick.Controls
 import Familiada
-
 
 
 Window {
 
     id:root
-    width: parent.width
-    height: parent.height
     minimumWidth: Constants.width
     minimumHeight: Constants.height
 
@@ -19,8 +18,21 @@ Window {
 
     function changeState(stateName)
     {
+        if(stateName === "screen1" && player.playbackState != MediaPlayer.PlayingState)
+            player.play()
+        else if(stateName === "screen3")
+            player.stop()
+        if(controls.visible)
+            controls.visible = false
         screens.state = stateName
 //        console.log(stateName)
+    }
+    function toggleControls()
+    {
+        if(controls.visible)
+            controls.visible = false
+        else
+            controls.visible = true
     }
 
     Screen01_Main{
@@ -37,6 +49,19 @@ Window {
         id: gameScreen
         visible:false
         anchors.fill: parent
+    }
+    Screen05_Controls {
+        id: controls
+        visible: false
+        anchors.fill: parent
+    }
+    MediaPlayer {
+            id: player
+            source: "sounds/familiada_intro.mp3"
+            loops: MediaPLayer.Infinite
+            audioOutput: AudioOutput {
+                volume: 1
+            }
     }
 
 
@@ -58,7 +83,6 @@ Window {
                     target: gameScreen
                     visible:false
                 }
-
             },
             State {
                 name: "screen2"
@@ -94,6 +118,6 @@ Window {
             }
         ]
     }
-
+    Component.onCompleted: player.play()
 }
 
