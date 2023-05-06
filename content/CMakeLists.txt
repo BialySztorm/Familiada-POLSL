@@ -13,4 +13,14 @@ qt6_add_qml_module(content
         Screen04_Joke.ui.qml
     RESOURCES
         fonts/fonts.txt
+        images/StrasburgerIco.ico
+        sounds/answer_bells.mp3
+        sounds/answer_good.mp3
+        sounds/answer_repeat.mp3
+        sounds/answer_wrong.mp3
+        sounds/familiada_between.mp3
+        sounds/familiada_intro.mp3
+        sounds/familiada_sound.mp3
+        sounds/final_time.mp3
+
 )

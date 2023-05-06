@@ -10,6 +10,7 @@
 
 #include "homepage.h"
 #include <QQmlContext>
+#include <QIcon>
 
 int main(int argc, char *argv[])
 {
@@ -18,6 +19,8 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
+
+    app.setWindowIcon(QIcon(":/content/images/StrasburgerIco.ico"));
     const QUrl url(u"qrc:Main/main.qml"_qs);
     QObject::connect(
         &engine, &QQmlApplicationEngine::objectCreated, &app,
