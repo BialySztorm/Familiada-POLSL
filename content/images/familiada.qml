@@ -1,6 +1,4 @@
 import QtQuick 6.4
-import QtQuick.Controls 6.4
-import Familiada
 import QtQuick.Studio.Components 1.0
 import QtQuick.Shapes 1.5
 
@@ -954,6 +952,8 @@ Canvas {
         y: 7
         width: 100
         height: 100
+        vendorExtensionsEnabled: false
+        asynchronous: false
         anchors.centerIn: parent
         anchors.horizontalCenterOffset: 407
         anchors.verticalCenterOffset: -115
@@ -978,7 +978,7 @@ Canvas {
                 x: 0
                 y: 0
             }
-            strokeWidth: 4
+            strokeWidth: 4.2
             strokeColor: "#68fff100"
             strokeStyle: ShapePath.DashLine
             startX: 55
@@ -1113,11 +1113,12 @@ Canvas {
         anchors.horizontalCenterOffset: 230
         anchors.centerIn: parent
         ShapePath {
+            dashPattern: 1
+            miterLimit: 2
             strokeWidth: 4
-            strokeColor: "#68fff100"
+            strokeColor: "#a8fff100"
             fillColor: "#fff700"
             strokeStyle: ShapePath.DashLine
-            dashPattern: [1, 4]
             startX: 55
             startY: 40
             PathLine {

@@ -25,6 +25,91 @@ Item {
             color: Constants.boardColor
             anchors.verticalCenter: parent.verticalCenter
             anchors.horizontalCenter: parent.horizontalCenter
+            Image {
+                id: leftBigX
+                source: "images/big_X.svg"
+                anchors.leftMargin: parent.width * 0.01
+                width: parent.width / 6
+                height: parent.height * 0.75
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.left: parent.left
+                visible: false
+            }
+
+            Column {
+                id: leftColumn
+                width: parent.width / 5
+                height: parent.height
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.left: parent.left
+                anchors.leftMargin: 0
+                spacing: parent.width / 120
+                padding: parent.width / 80
+                Image {
+                    id: leftSmallX1
+                    source: "images/small_X.svg"
+                    width: parent.width - parent.width / 5
+                    height: parent.height / 3 - parent.width / 10
+                    visible: false
+                }
+                Image {
+                    id: leftSmallX2
+                    source: "images/small_X.svg"
+                    width: parent.width - parent.width / 5
+                    height: parent.height / 3 - parent.width / 10
+                    visible: false
+                }
+                Image {
+                    id: leftSmallX3
+                    source: "images/small_X.svg"
+                    width: parent.width - parent.width / 5
+                    height: parent.height / 3 - parent.width / 10
+                    visible: false
+                }
+            }
+
+            Image {
+                id: rightBigX
+                source: "images/big_X.svg"
+                anchors.rightMargin: 0
+                width: parent.width / 6
+                height: parent.height * 0.75
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.right: parent.right
+                visible: false
+            }
+
+            Column {
+                id: rightColumn
+                width: parent.width / 5
+                height: parent.height
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.right: parent.right
+                anchors.rightMargin: 0
+                spacing: parent.width / 120
+                padding: parent.width / 80
+                Image {
+                    id: rightSmallX1
+                    source: "images/small_X.svg"
+                    width: parent.width - parent.width / 5
+                    height: parent.height / 3 - parent.width / 10
+                    visible: false
+                }
+                Image {
+                    id: rightSmallX2
+                    source: "images/small_X.svg"
+                    width: parent.width - parent.width / 5
+                    height: parent.height / 3 - parent.width / 10
+                    visible: false
+                }
+                Image {
+                    id: rightSmallX3
+                    source: "images/small_X.svg"
+                    width: parent.width - parent.width / 5
+                    height: parent.height / 3 - parent.width / 10
+                    visible: false
+                }
+            }
         }
 
         Rectangle {

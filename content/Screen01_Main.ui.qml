@@ -13,8 +13,6 @@ import Familiada
 Item {
     id: screen1
 
-
-
     Rectangle {
         id: rectangle
         width: parent.width

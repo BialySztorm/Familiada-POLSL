@@ -1,2288 +1,2236 @@
-/*
-This is a UI file (.ui.qml) that is intended to be edited in Qt Design Studio only.
-It is supposed to be strictly declarative and only uses a subset of QML. If you edit
-this file manually, you might introduce QML code that is not supported by Qt Design Studio.
-Check out https://doc.qt.io/qtcreator/creator-quick-ui-forms.html for details on .ui.qml files.
-*/
-
-import QtQuick 6.4
-import QtQuick.Controls 6.4
-import XX
-import QtQuick.Studio.Components 1.0
-
-Canvas {
-    height: 2650
-    width: 1080
-    contextType: "2d"
-
-    RectangleItem {
-        id: rectangle
-        x: 39
-        y: 45
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle1
-        x: 39
-        y: 106
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle2
-        x: 39
-        y: 167
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle3
-        x: 39
-        y: 228
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle4
-        x: 39
-        y: 289
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle5
-        x: 39
-        y: 350
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle6
-        x: 39
-        y: 411
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle7
-        x: 100
-        y: 106
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle8
-        x: 100
-        y: 167
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle9
-        x: 100
-        y: 228
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle10
-        x: 100
-        y: 289
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle11
-        x: 100
-        y: 350
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle12
-        x: 100
-        y: 411
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle13
-        x: 161
-        y: 167
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle14
-        x: 161
-        y: 228
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle15
-        x: 161
-        y: 289
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle16
-        x: 161
-        y: 350
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle17
-        x: 161
-        y: 411
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle18
-        x: 222
-        y: 228
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle19
-        x: 222
-        y: 289
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle20
-        x: 222
-        y: 350
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle21
-        x: 222
-        y: 411
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle22
-        x: 283
-        y: 289
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle23
-        x: 283
-        y: 350
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle24
-        x: 283
-        y: 411
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle25
-        x: 986
-        y: 45
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle26
-        x: 986
-        y: 106
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle27
-        x: 986
-        y: 167
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle28
-        x: 986
-        y: 228
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle29
-        x: 986
-        y: 289
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle30
-        x: 986
-        y: 350
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle31
-        x: 986
-        y: 411
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle32
-        x: 925
-        y: 106
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle33
-        x: 925
-        y: 167
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle34
-        x: 925
-        y: 228
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle35
-        x: 925
-        y: 289
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle36
-        x: 925
-        y: 350
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle37
-        x: 925
-        y: 411
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle38
-        x: 864
-        y: 167
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle39
-        x: 864
-        y: 228
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle40
-        x: 864
-        y: 289
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle41
-        x: 864
-        y: 350
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle42
-        x: 864
-        y: 411
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle47
-        x: 804
-        y: 228
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle48
-        x: 804
-        y: 289
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle49
-        x: 804
-        y: 350
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle50
-        x: 804
-        y: 411
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle55
-        x: 744
-        y: 289
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle56
-        x: 744
-        y: 350
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle57
-        x: 744
-        y: 411
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle61
-        x: 283
-        y: 600
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle62
-        x: 283
-        y: 661
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle63
-        x: 283
-        y: 722
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle64
-        x: 283
-        y: 783
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle65
-        x: 283
-        y: 844
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle66
-        x: 283
-        y: 905
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle67
-        x: 283
-        y: 966
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle68
-        x: 222
-        y: 600
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle69
-        x: 222
-        y: 661
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle70
-        x: 222
-        y: 722
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle71
-        x: 222
-        y: 783
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle72
-        x: 222
-        y: 844
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle73
-        x: 222
-        y: 905
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle74
-        x: 161
-        y: 600
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle75
-        x: 161
-        y: 661
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle76
-        x: 161
-        y: 722
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle77
-        x: 161
-        y: 783
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle78
-        x: 161
-        y: 844
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle79
-        x: 100
-        y: 600
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle80
-        x: 100
-        y: 661
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle81
-        x: 100
-        y: 722
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle82
-        x: 100
-        y: 783
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle83
-        x: 39
-        y: 600
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle84
-        x: 39
-        y: 661
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle85
-        x: 39
-        y: 722
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle86
-        x: 745
-        y: 600
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle87
-        x: 745
-        y: 661
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle88
-        x: 745
-        y: 722
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle89
-        x: 745
-        y: 783
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle90
-        x: 745
-        y: 844
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle91
-        x: 745
-        y: 905
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle92
-        x: 745
-        y: 966
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle93
-        x: 805
-        y: 600
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle94
-        x: 805
-        y: 661
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle95
-        x: 805
-        y: 722
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle96
-        x: 805
-        y: 783
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle97
-        x: 805
-        y: 844
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle98
-        x: 805
-        y: 905
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle99
-        x: 864
-        y: 600
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle100
-        x: 864
-        y: 661
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle101
-        x: 864
-        y: 722
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle102
-        x: 864
-        y: 783
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle103
-        x: 864
-        y: 844
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle104
-        x: 925
-        y: 600
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle105
-        x: 925
-        y: 661
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle106
-        x: 925
-        y: 722
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle107
-        x: 925
-        y: 783
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle108
-        x: 986
-        y: 600
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle109
-        x: 986
-        y: 661
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle110
-        x: 986
-        y: 722
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle111
-        x: 391
-        y: 1107
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle112
-        x: 452
-        y: 1107
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle113
-        x: 513
-        y: 1107
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle114
-        x: 572
-        y: 1107
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle115
-        x: 633
-        y: 1107
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle116
-        x: 391
-        y: 1168
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle117
-        x: 452
-        y: 1168
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle118
-        x: 513
-        y: 1168
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle119
-        x: 572
-        y: 1168
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle120
-        x: 633
-        y: 1168
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle121
-        x: 452
-        y: 1229
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle122
-        x: 513
-        y: 1229
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle123
-        x: 572
-        y: 1229
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle124
-        x: 513
-        y: 1290
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle125
-        x: 452
-        y: 1351
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle126
-        x: 513
-        y: 1351
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle127
-        x: 572
-        y: 1351
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle128
-        x: 391
-        y: 1412
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle129
-        x: 452
-        y: 1412
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle130
-        x: 513
-        y: 1412
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle131
-        x: 572
-        y: 1412
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle132
-        x: 633
-        y: 1412
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle133
-        x: 391
-        y: 1473
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle134
-        x: 452
-        y: 1473
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle135
-        x: 513
-        y: 1473
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle136
-        x: 572
-        y: 1473
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle137
-        x: 633
-        y: 1473
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle43
-        x: 283
-        y: 1614
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle44
-        x: 283
-        y: 1675
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle45
-        x: 283
-        y: 1736
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle46
-        x: 283
-        y: 1797
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle51
-        x: 283
-        y: 1858
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle52
-        x: 283
-        y: 1919
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle53
-        x: 283
-        y: 1980
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle54
-        x: 222
-        y: 1675
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle58
-        x: 222
-        y: 1736
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle59
-        x: 222
-        y: 1797
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle60
-        x: 222
-        y: 1858
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle138
-        x: 222
-        y: 1919
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle139
-        x: 222
-        y: 1980
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle140
-        x: 161
-        y: 1736
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle141
-        x: 161
-        y: 1797
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle142
-        x: 161
-        y: 1858
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle143
-        x: 161
-        y: 1919
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle144
-        x: 161
-        y: 1980
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle145
-        x: 101
-        y: 1797
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle146
-        x: 101
-        y: 1858
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle147
-        x: 101
-        y: 1919
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle148
-        x: 101
-        y: 1980
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle149
-        x: 41
-        y: 1858
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle150
-        x: 41
-        y: 1919
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle151
-        x: 41
-        y: 1980
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle152
-        x: 42
-        y: 2169
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle153
-        x: 42
-        y: 2230
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle154
-        x: 42
-        y: 2291
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle155
-        x: 42
-        y: 2352
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle156
-        x: 42
-        y: 2413
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle157
-        x: 42
-        y: 2474
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle158
-        x: 42
-        y: 2535
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle159
-        x: 102
-        y: 2169
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle160
-        x: 102
-        y: 2230
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle161
-        x: 102
-        y: 2291
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle162
-        x: 102
-        y: 2352
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle163
-        x: 102
-        y: 2413
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle164
-        x: 102
-        y: 2474
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle165
-        x: 161
-        y: 2169
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle166
-        x: 161
-        y: 2230
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle167
-        x: 161
-        y: 2291
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle168
-        x: 161
-        y: 2352
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle169
-        x: 161
-        y: 2413
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle170
-        x: 222
-        y: 2169
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle171
-        x: 222
-        y: 2230
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle172
-        x: 222
-        y: 2291
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle173
-        x: 222
-        y: 2352
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle174
-        x: 283
-        y: 2169
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle175
-        x: 283
-        y: 2230
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle176
-        x: 283
-        y: 2291
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle177
-        x: 742
-        y: 1614
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle178
-        x: 742
-        y: 1675
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle179
-        x: 742
-        y: 1736
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle180
-        x: 742
-        y: 1797
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle181
-        x: 742
-        y: 1858
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle182
-        x: 742
-        y: 1919
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle183
-        x: 742
-        y: 1980
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle184
-        x: 803
-        y: 1675
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle185
-        x: 803
-        y: 1736
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle186
-        x: 803
-        y: 1797
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle187
-        x: 803
-        y: 1858
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle188
-        x: 803
-        y: 1919
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle189
-        x: 803
-        y: 1980
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle190
-        x: 864
-        y: 1736
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle191
-        x: 864
-        y: 1797
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle192
-        x: 864
-        y: 1858
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle193
-        x: 864
-        y: 1919
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle194
-        x: 864
-        y: 1980
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle195
-        x: 925
-        y: 1797
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle196
-        x: 925
-        y: 1858
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle197
-        x: 925
-        y: 1919
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle198
-        x: 925
-        y: 1980
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle199
-        x: 986
-        y: 1858
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle200
-        x: 986
-        y: 1919
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle201
-        x: 986
-        y: 1980
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle202
-        x: 986
-        y: 2169
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle203
-        x: 986
-        y: 2230
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle204
-        x: 986
-        y: 2291
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle205
-        x: 986
-        y: 2352
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle206
-        x: 986
-        y: 2413
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle207
-        x: 986
-        y: 2474
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle208
-        x: 986
-        y: 2535
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle209
-        x: 925
-        y: 2169
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle210
-        x: 925
-        y: 2230
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle211
-        x: 925
-        y: 2291
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle212
-        x: 925
-        y: 2352
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle213
-        x: 925
-        y: 2413
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle214
-        x: 925
-        y: 2474
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle215
-        x: 864
-        y: 2169
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle216
-        x: 864
-        y: 2230
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle217
-        x: 864
-        y: 2291
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle218
-        x: 864
-        y: 2352
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle219
-        x: 864
-        y: 2413
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle220
-        x: 803
-        y: 2169
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle221
-        x: 803
-        y: 2230
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle222
-        x: 803
-        y: 2291
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle223
-        x: 803
-        y: 2352
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle224
-        x: 742
-        y: 2169
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle225
-        x: 742
-        y: 2230
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-    RectangleItem {
-        id: rectangle226
-        x: 742
-        y: 2291
-        width: 55
-        height: 55
-        strokeColor: "#68fff100"
-        fillColor: "#fff700"
-    }
-
-}
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1005mm"
+   height="2545mm"
+   viewBox="0 0 1005 2545"
+   version="1.1"
+   id="svg351"
+   sodipodi:docname="big_X.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview353"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.056568542"
+     inkscape:cx="212.13203"
+     inkscape:cy="4896.7145"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs348" />
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect355"
+       width="55"
+       height="55"
+       x="0"
+       y="0"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect355-6"
+       width="55"
+       height="55"
+       x="0"
+       y="61"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect355-6-7"
+       width="55"
+       height="55"
+       x="0"
+       y="122"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect355-6-7-8"
+       width="55"
+       height="55"
+       x="61"
+       y="122"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect355-6-7-6"
+       width="55"
+       height="55"
+       x="0"
+       y="183"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect355-6-7-6-2"
+       width="55"
+       height="55"
+       x="0"
+       y="244"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect355-6-7-6-2-2"
+       width="55"
+       height="55"
+       x="0"
+       y="305"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect355-6-7-6-2-2-8"
+       width="55"
+       height="55"
+       x="0"
+       y="366"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect355-6-7-6-2-2-8-1"
+       width="55"
+       height="55"
+       x="61"
+       y="61"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect786"
+       width="55"
+       height="55"
+       x="61"
+       y="183"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect788"
+       width="55"
+       height="55"
+       x="61"
+       y="244"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect790"
+       width="55"
+       height="55"
+       x="61"
+       y="305"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect792"
+       width="55"
+       height="55"
+       x="61"
+       y="366"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect794"
+       width="55"
+       height="55"
+       x="122"
+       y="122"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect796"
+       width="55"
+       height="55"
+       x="122"
+       y="183"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect798"
+       width="55"
+       height="55"
+       x="122"
+       y="244"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect800"
+       width="55"
+       height="55"
+       x="122"
+       y="305"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect802"
+       width="55"
+       height="55"
+       x="122"
+       y="366"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect804"
+       width="55"
+       height="55"
+       x="183"
+       y="183"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect806"
+       width="55"
+       height="55"
+       x="183"
+       y="244"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect808"
+       width="55"
+       height="55"
+       x="183"
+       y="305"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect810"
+       width="55"
+       height="55"
+       x="183"
+       y="366"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect812"
+       width="55"
+       height="55"
+       x="244"
+       y="244"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect814"
+       width="55"
+       height="55"
+       x="244"
+       y="305"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect816"
+       width="55"
+       height="55"
+       x="244"
+       y="366"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect816-4"
+       width="55"
+       height="55"
+       x="244"
+       y="555"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect854"
+       width="55"
+       height="55"
+       x="244"
+       y="616"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect856"
+       width="55"
+       height="55"
+       x="244"
+       y="677"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect858"
+       width="55"
+       height="55"
+       x="244"
+       y="738"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect860"
+       width="55"
+       height="55"
+       x="244"
+       y="799"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect862"
+       width="55"
+       height="55"
+       x="244"
+       y="860"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect864"
+       width="55"
+       height="55"
+       x="244"
+       y="921"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect864-2"
+       width="55"
+       height="55"
+       x="474"
+       y="1062"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect868"
+       width="55"
+       height="55"
+       x="183"
+       y="555"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect870"
+       width="55"
+       height="55"
+       x="183"
+       y="616"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect872"
+       width="55"
+       height="55"
+       x="183"
+       y="677"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect874"
+       width="55"
+       height="55"
+       x="183"
+       y="738"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect876"
+       width="55"
+       height="55"
+       x="183"
+       y="799"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect878"
+       width="55"
+       height="55"
+       x="183"
+       y="860"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect880"
+       width="55"
+       height="55"
+       x="122"
+       y="555"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect882"
+       width="55"
+       height="55"
+       x="122"
+       y="616"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect884"
+       width="55"
+       height="55"
+       x="122"
+       y="677"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect886"
+       width="55"
+       height="55"
+       x="122"
+       y="738"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect888"
+       width="55"
+       height="55"
+       x="122"
+       y="799"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect890"
+       width="55"
+       height="55"
+       x="61"
+       y="555"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect892"
+       width="55"
+       height="55"
+       x="61"
+       y="616"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect894"
+       width="55"
+       height="55"
+       x="61"
+       y="677"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect896"
+       width="55"
+       height="55"
+       x="61"
+       y="738"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect898"
+       width="55"
+       height="55"
+       x="0"
+       y="555"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect900"
+       width="55"
+       height="55"
+       x="0"
+       y="616"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect902"
+       width="55"
+       height="55"
+       x="0"
+       y="677"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1004"
+       width="55"
+       height="55"
+       x="-1005"
+       y="0"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1006"
+       width="55"
+       height="55"
+       x="-1005"
+       y="61"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1008"
+       width="55"
+       height="55"
+       x="-1005"
+       y="122"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1010"
+       width="55"
+       height="55"
+       x="-944"
+       y="122"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1012"
+       width="55"
+       height="55"
+       x="-1005"
+       y="183"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1014"
+       width="55"
+       height="55"
+       x="-1005"
+       y="244"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1016"
+       width="55"
+       height="55"
+       x="-1005"
+       y="305"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1018"
+       width="55"
+       height="55"
+       x="-1005"
+       y="366"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1020"
+       width="55"
+       height="55"
+       x="-944"
+       y="61"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1022"
+       width="55"
+       height="55"
+       x="-944"
+       y="183"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1024"
+       width="55"
+       height="55"
+       x="-944"
+       y="244"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1026"
+       width="55"
+       height="55"
+       x="-944"
+       y="305"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1028"
+       width="55"
+       height="55"
+       x="-944"
+       y="366"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1030"
+       width="55"
+       height="55"
+       x="-883"
+       y="122"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1032"
+       width="55"
+       height="55"
+       x="-883"
+       y="183"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1034"
+       width="55"
+       height="55"
+       x="-883"
+       y="244"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1036"
+       width="55"
+       height="55"
+       x="-883"
+       y="305"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1038"
+       width="55"
+       height="55"
+       x="-883"
+       y="366"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1040"
+       width="55"
+       height="55"
+       x="-822"
+       y="183"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1042"
+       width="55"
+       height="55"
+       x="-822"
+       y="244"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1044"
+       width="55"
+       height="55"
+       x="-822"
+       y="305"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1046"
+       width="55"
+       height="55"
+       x="-822"
+       y="366"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1048"
+       width="55"
+       height="55"
+       x="-761"
+       y="244"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1050"
+       width="55"
+       height="55"
+       x="-761"
+       y="305"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1052"
+       width="55"
+       height="55"
+       x="-761"
+       y="366"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1054"
+       width="55"
+       height="55"
+       x="-761"
+       y="555"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1056"
+       width="55"
+       height="55"
+       x="-761"
+       y="616"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1058"
+       width="55"
+       height="55"
+       x="-761"
+       y="677"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1060"
+       width="55"
+       height="55"
+       x="-761"
+       y="738"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1062"
+       width="55"
+       height="55"
+       x="-761"
+       y="799"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1064"
+       width="55"
+       height="55"
+       x="-761"
+       y="860"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1066"
+       width="55"
+       height="55"
+       x="-761"
+       y="921"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1068"
+       width="55"
+       height="55"
+       x="-822"
+       y="555"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1070"
+       width="55"
+       height="55"
+       x="-822"
+       y="616"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1072"
+       width="55"
+       height="55"
+       x="-822"
+       y="677"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1074"
+       width="55"
+       height="55"
+       x="-822"
+       y="738"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1076"
+       width="55"
+       height="55"
+       x="-822"
+       y="799"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1078"
+       width="55"
+       height="55"
+       x="-822"
+       y="860"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1080"
+       width="55"
+       height="55"
+       x="-883"
+       y="555"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1082"
+       width="55"
+       height="55"
+       x="-883"
+       y="616"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1084"
+       width="55"
+       height="55"
+       x="-883"
+       y="677"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1086"
+       width="55"
+       height="55"
+       x="-883"
+       y="738"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1088"
+       width="55"
+       height="55"
+       x="-883"
+       y="799"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1090"
+       width="55"
+       height="55"
+       x="-944"
+       y="555"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1092"
+       width="55"
+       height="55"
+       x="-944"
+       y="616"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1094"
+       width="55"
+       height="55"
+       x="-944"
+       y="677"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1096"
+       width="55"
+       height="55"
+       x="-944"
+       y="738"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1098"
+       width="55"
+       height="55"
+       x="-1005"
+       y="555"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1100"
+       width="55"
+       height="55"
+       x="-1005"
+       y="616"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1102"
+       width="55"
+       height="55"
+       x="-1005"
+       y="677"
+       rx="11"
+       ry="11"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1104"
+       width="55"
+       height="55"
+       x="0"
+       y="-2545"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1106"
+       width="55"
+       height="55"
+       x="0"
+       y="-2484"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1108"
+       width="55"
+       height="55"
+       x="0"
+       y="-2423"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1110"
+       width="55"
+       height="55"
+       x="61"
+       y="-2423"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1112"
+       width="55"
+       height="55"
+       x="0"
+       y="-2362"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1114"
+       width="55"
+       height="55"
+       x="0"
+       y="-2301"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1116"
+       width="55"
+       height="55"
+       x="0"
+       y="-2240"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1118"
+       width="55"
+       height="55"
+       x="0"
+       y="-2179"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1120"
+       width="55"
+       height="55"
+       x="61"
+       y="-2484"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1122"
+       width="55"
+       height="55"
+       x="61"
+       y="-2362"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1124"
+       width="55"
+       height="55"
+       x="61"
+       y="-2301"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1126"
+       width="55"
+       height="55"
+       x="61"
+       y="-2240"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1128"
+       width="55"
+       height="55"
+       x="61"
+       y="-2179"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1130"
+       width="55"
+       height="55"
+       x="122"
+       y="-2423"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1132"
+       width="55"
+       height="55"
+       x="122"
+       y="-2362"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1134"
+       width="55"
+       height="55"
+       x="122"
+       y="-2301"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1136"
+       width="55"
+       height="55"
+       x="122"
+       y="-2240"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1138"
+       width="55"
+       height="55"
+       x="122"
+       y="-2179"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1140"
+       width="55"
+       height="55"
+       x="183"
+       y="-2362"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1142"
+       width="55"
+       height="55"
+       x="183"
+       y="-2301"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1144"
+       width="55"
+       height="55"
+       x="183"
+       y="-2240"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1146"
+       width="55"
+       height="55"
+       x="183"
+       y="-2179"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1148"
+       width="55"
+       height="55"
+       x="244"
+       y="-2301"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1150"
+       width="55"
+       height="55"
+       x="244"
+       y="-2240"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1152"
+       width="55"
+       height="55"
+       x="244"
+       y="-2179"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1154"
+       width="55"
+       height="55"
+       x="244"
+       y="-1990"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1156"
+       width="55"
+       height="55"
+       x="244"
+       y="-1929"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1158"
+       width="55"
+       height="55"
+       x="244"
+       y="-1868"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1160"
+       width="55"
+       height="55"
+       x="244"
+       y="-1807"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1162"
+       width="55"
+       height="55"
+       x="244"
+       y="-1746"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1164"
+       width="55"
+       height="55"
+       x="244"
+       y="-1685"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1166"
+       width="55"
+       height="55"
+       x="244"
+       y="-1624"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1168"
+       width="55"
+       height="55"
+       x="183"
+       y="-1990"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1170"
+       width="55"
+       height="55"
+       x="183"
+       y="-1929"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1172"
+       width="55"
+       height="55"
+       x="183"
+       y="-1868"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1174"
+       width="55"
+       height="55"
+       x="183"
+       y="-1807"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1176"
+       width="55"
+       height="55"
+       x="183"
+       y="-1746"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1178"
+       width="55"
+       height="55"
+       x="183"
+       y="-1685"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1180"
+       width="55"
+       height="55"
+       x="122"
+       y="-1990"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1182"
+       width="55"
+       height="55"
+       x="122"
+       y="-1929"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1184"
+       width="55"
+       height="55"
+       x="122"
+       y="-1868"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1186"
+       width="55"
+       height="55"
+       x="122"
+       y="-1807"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1188"
+       width="55"
+       height="55"
+       x="122"
+       y="-1746"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1190"
+       width="55"
+       height="55"
+       x="61"
+       y="-1990"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1192"
+       width="55"
+       height="55"
+       x="61"
+       y="-1929"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1194"
+       width="55"
+       height="55"
+       x="61"
+       y="-1868"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1196"
+       width="55"
+       height="55"
+       x="61"
+       y="-1807"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1198"
+       width="55"
+       height="55"
+       x="0"
+       y="-1990"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1200"
+       width="55"
+       height="55"
+       x="0"
+       y="-1929"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1202"
+       width="55"
+       height="55"
+       x="0"
+       y="-1868"
+       rx="11"
+       ry="11"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1204"
+       width="55"
+       height="55"
+       x="-1005"
+       y="-2545"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1206"
+       width="55"
+       height="55"
+       x="-1005"
+       y="-2484"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1208"
+       width="55"
+       height="55"
+       x="-1005"
+       y="-2423"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1210"
+       width="55"
+       height="55"
+       x="-944"
+       y="-2423"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1212"
+       width="55"
+       height="55"
+       x="-1005"
+       y="-2362"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1214"
+       width="55"
+       height="55"
+       x="-1005"
+       y="-2301"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1216"
+       width="55"
+       height="55"
+       x="-1005"
+       y="-2240"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1218"
+       width="55"
+       height="55"
+       x="-1005"
+       y="-2179"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1220"
+       width="55"
+       height="55"
+       x="-944"
+       y="-2484"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1222"
+       width="55"
+       height="55"
+       x="-944"
+       y="-2362"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1224"
+       width="55"
+       height="55"
+       x="-944"
+       y="-2301"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1226"
+       width="55"
+       height="55"
+       x="-944"
+       y="-2240"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1228"
+       width="55"
+       height="55"
+       x="-944"
+       y="-2179"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1230"
+       width="55"
+       height="55"
+       x="-883"
+       y="-2423"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1232"
+       width="55"
+       height="55"
+       x="-883"
+       y="-2362"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1234"
+       width="55"
+       height="55"
+       x="-883"
+       y="-2301"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1236"
+       width="55"
+       height="55"
+       x="-883"
+       y="-2240"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1238"
+       width="55"
+       height="55"
+       x="-883"
+       y="-2179"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1240"
+       width="55"
+       height="55"
+       x="-822"
+       y="-2362"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1242"
+       width="55"
+       height="55"
+       x="-822"
+       y="-2301"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1244"
+       width="55"
+       height="55"
+       x="-822"
+       y="-2240"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1246"
+       width="55"
+       height="55"
+       x="-822"
+       y="-2179"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1248"
+       width="55"
+       height="55"
+       x="-761"
+       y="-2301"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1250"
+       width="55"
+       height="55"
+       x="-761"
+       y="-2240"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1252"
+       width="55"
+       height="55"
+       x="-761"
+       y="-2179"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1254"
+       width="55"
+       height="55"
+       x="-761"
+       y="-1990"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1256"
+       width="55"
+       height="55"
+       x="-761"
+       y="-1929"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1258"
+       width="55"
+       height="55"
+       x="-761"
+       y="-1868"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1260"
+       width="55"
+       height="55"
+       x="-761"
+       y="-1807"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1262"
+       width="55"
+       height="55"
+       x="-761"
+       y="-1746"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1264"
+       width="55"
+       height="55"
+       x="-761"
+       y="-1685"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1266"
+       width="55"
+       height="55"
+       x="-761"
+       y="-1624"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1268"
+       width="55"
+       height="55"
+       x="-822"
+       y="-1990"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1270"
+       width="55"
+       height="55"
+       x="-822"
+       y="-1929"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1272"
+       width="55"
+       height="55"
+       x="-822"
+       y="-1868"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1274"
+       width="55"
+       height="55"
+       x="-822"
+       y="-1807"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1276"
+       width="55"
+       height="55"
+       x="-822"
+       y="-1746"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1278"
+       width="55"
+       height="55"
+       x="-822"
+       y="-1685"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1280"
+       width="55"
+       height="55"
+       x="-883"
+       y="-1990"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1282"
+       width="55"
+       height="55"
+       x="-883"
+       y="-1929"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1284"
+       width="55"
+       height="55"
+       x="-883"
+       y="-1868"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1286"
+       width="55"
+       height="55"
+       x="-883"
+       y="-1807"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1288"
+       width="55"
+       height="55"
+       x="-883"
+       y="-1746"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1290"
+       width="55"
+       height="55"
+       x="-944"
+       y="-1990"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1292"
+       width="55"
+       height="55"
+       x="-944"
+       y="-1929"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1294"
+       width="55"
+       height="55"
+       x="-944"
+       y="-1868"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1296"
+       width="55"
+       height="55"
+       x="-944"
+       y="-1807"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1298"
+       width="55"
+       height="55"
+       x="-1005"
+       y="-1990"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1300"
+       width="55"
+       height="55"
+       x="-1005"
+       y="-1929"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1302"
+       width="55"
+       height="55"
+       x="-1005"
+       y="-1868"
+       rx="11"
+       ry="11"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1331"
+       width="55"
+       height="55"
+       x="474"
+       y="1123"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1333"
+       width="55"
+       height="55"
+       x="474"
+       y="1184"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1335"
+       width="55"
+       height="55"
+       x="474"
+       y="1245"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1337"
+       width="55"
+       height="55"
+       x="474"
+       y="1306"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1339"
+       width="55"
+       height="55"
+       x="474"
+       y="1367"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1341"
+       width="55"
+       height="55"
+       x="474"
+       y="1428"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1343"
+       width="55"
+       height="55"
+       x="413"
+       y="1062"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1345"
+       width="55"
+       height="55"
+       x="413"
+       y="1123"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1347"
+       width="55"
+       height="55"
+       x="413"
+       y="1184"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1349"
+       width="55"
+       height="55"
+       x="413"
+       y="1306"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1351"
+       width="55"
+       height="55"
+       x="413"
+       y="1367"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1353"
+       width="55"
+       height="55"
+       x="413"
+       y="1428"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1355"
+       width="55"
+       height="55"
+       x="352"
+       y="1062"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1357"
+       width="55"
+       height="55"
+       x="352"
+       y="1123"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1359"
+       width="55"
+       height="55"
+       x="352"
+       y="1367"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1361"
+       width="55"
+       height="55"
+       x="352"
+       y="1428"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1363"
+       width="55"
+       height="55"
+       x="533"
+       y="1062"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1365"
+       width="55"
+       height="55"
+       x="533"
+       y="1123"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1367"
+       width="55"
+       height="55"
+       x="533"
+       y="1184"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1369"
+       width="55"
+       height="55"
+       x="533"
+       y="1306"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1371"
+       width="55"
+       height="55"
+       x="533"
+       y="1367"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1373"
+       width="55"
+       height="55"
+       x="533"
+       y="1428"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1375"
+       width="55"
+       height="55"
+       x="594"
+       y="1062"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1377"
+       width="55"
+       height="55"
+       x="594"
+       y="1123"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1379"
+       width="55"
+       height="55"
+       x="594"
+       y="1367"
+       rx="11"
+       ry="11" />
+    <rect
+       style="fill:#fff700;stroke-width:2.91041;fill-opacity:1"
+       id="rect1381"
+       width="55"
+       height="55"
+       x="594"
+       y="1428"
+       rx="11"
+       ry="11" />
+  </g>
+</svg>
