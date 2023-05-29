@@ -8,7 +8,8 @@
 #include "import_qml_components_plugins.h"
 #include "import_qml_plugins.h"
 
-#include "homepage.h"
+#include "game.h"
+#include "joke.h"
 #include <QQmlContext>
 #include <QIcon>
 
@@ -36,8 +37,12 @@ int main(int argc, char *argv[])
     engine.load(url);
 
     // add global c++ object to the QML context as a property
-    HomePage* homepage = new HomePage();
-    engine.rootContext()->setContextProperty("homePage", homepage);
+    Game* game = new Game();
+    engine.rootContext()->setContextProperty("game", game);
+    Joke* joke = new Joke();
+    engine.rootContext()->setContextProperty("joke", joke);
+
+    // add controller
 
     if (engine.rootObjects().isEmpty()) {
         return -1;
