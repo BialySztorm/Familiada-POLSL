@@ -11,6 +11,7 @@ class Game : public QObject
     Q_OBJECT
 public:
     explicit Game(QObject *parent = nullptr);
+    Q_INVOKABLE void reset();
 
 signals:
 

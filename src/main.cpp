@@ -10,6 +10,7 @@
 
 #include "game.h"
 #include "joke.h"
+#include "controller.h"
 #include <QQmlContext>
 #include <QIcon>
 
@@ -22,7 +23,9 @@ int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
 
     app.setWindowIcon(QIcon(":/content/images/StrasburgerIco.ico"));
+
     const QUrl url(u"qrc:Main/main.qml"_qs);
+
     QObject::connect(
         &engine, &QQmlApplicationEngine::objectCreated, &app,
         [url](QObject *obj, const QUrl &objUrl) {
@@ -43,6 +46,8 @@ int main(int argc, char *argv[])
     engine.rootContext()->setContextProperty("joke", joke);
 
     // add controller
+    Controller* controller = new Controller();
+    engine.rootContext()->setContextProperty("controller", controller);
 
     if (engine.rootObjects().isEmpty()) {
         return -1;

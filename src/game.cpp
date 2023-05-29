@@ -7,3 +7,8 @@ Game::Game(QObject *parent)
 
 }
 
+void Game::reset()
+{
+
+}
+
