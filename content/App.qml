@@ -4,6 +4,7 @@
 import QtQuick 6.2
 import QtMultimedia
 import QtQuick.Controls
+import QtQuick.Dialogs
 import Familiada
 
 
@@ -35,6 +36,19 @@ Window {
             controls.visible = true
     }
 
+    MessageDialog {
+        id: joke1
+        buttons: MessageDialog.Ok
+        text: "Content"
+    }
+    function openJoke()
+    {
+        joke.drawJoke();
+        joke1.text = joke.getContent()
+        joke1.open();
+
+    }
+
     Screen01_Main{
         id: mainScreen
         visible: true
@@ -50,7 +64,7 @@ Window {
         visible:false
         anchors.fill: parent
     }
-    Screen05_Controls {
+    Screen04_Controls {
         id: controls
         visible: false
         anchors.fill: parent

@@ -169,5 +169,16 @@ Item {
                 onClicked: root.changeState("screen1")
             }
         }
+
+        Button {
+            id: button
+            x: 263
+            y: 406
+            text: qsTr("Joke")
+            Connections {
+                target: button
+                onClicked: root.openJoke()
+            }
+        }
     }
 }
