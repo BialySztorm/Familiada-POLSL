@@ -9,8 +9,8 @@ import Familiada
 
 
 Window {
-
     id:root
+
     minimumWidth: Constants.width
     minimumHeight: Constants.height
 
@@ -20,9 +20,17 @@ Window {
     function changeState(stateName)
     {
         if(stateName === "screen1" && player.playbackState != MediaPlayer.PlayingState)
+        {
+            mainScreen.focus = true
             player.play()
+            controller.reset()
+            game.reset()
+        }
         else if(stateName === "screen3")
+        {
+            gameScreen.focus = true
             player.stop()
+        }
         if(controls.visible)
             controls.visible = false
         screens.state = stateName
@@ -31,15 +39,23 @@ Window {
     function toggleControls()
     {
         if(controls.visible)
+        {
             controls.visible = false
+            gameScreen.focus = true
+        }
         else
+        {
             controls.visible = true
+            controls.focus = true
+        }
     }
 
     MessageDialog {
         id: joke1
         buttons: MessageDialog.Ok
         text: "Content"
+        onAccepted: gameScreen.focus = true
+        onRejected: gameScreen.focus = true
     }
     function openJoke()
     {
@@ -63,6 +79,7 @@ Window {
         id: gameScreen
         visible:false
         anchors.fill: parent
+        Keys.onPressed: (event)=> { controller.keyPressEvent(event.key) ; if (event.key === Qt.Key_J) openJoke()}
     }
     Screen04_Controls {
         id: controls

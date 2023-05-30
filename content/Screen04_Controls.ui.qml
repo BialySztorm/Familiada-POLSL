@@ -47,7 +47,7 @@ Item {
             }
             Text {
                 id: text5
-                text: qsTr("1-5 - odsłoń odpowiedź")
+                text: qsTr("1-6 - odsłoń odpowiedź")
                 font.pixelSize: parent.width / 15
             }
             Text {
@@ -57,12 +57,27 @@ Item {
             }
             Text {
                 id: text7
-                text: qsTr("a - poprzednie pytanie")
+                text: qsTr("c - całkowicie błędna odpowiedź")
                 font.pixelSize: parent.width / 15
             }
             Text {
                 id: text8
+                text: qsTr("a - poprzednie pytanie")
+                font.pixelSize: parent.width / 15
+            }
+            Text {
+                id: text9
                 text: qsTr("d - następne pytanie")
+                font.pixelSize: parent.width / 15
+            }
+            Text {
+                id: text10
+                text: qsTr("z - anuluj ostatnią odpowiedź (finał)")
+                font.pixelSize: parent.width / 15
+            }
+            Text {
+                id: text11
+                text: qsTr("j - wyświetl żart")
                 font.pixelSize: parent.width / 15
             }
         }
