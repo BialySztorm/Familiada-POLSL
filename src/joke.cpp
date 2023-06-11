@@ -33,9 +33,10 @@ void Joke::drawJoke()
     {
         int x  = QRandomGenerator::global()->bounded(Jokes.length());
 
-        UsedJokes.append(Jokes[x]);
+
 
         QStringList tmp = Jokes[x].split(';');
+        UsedJokes.append(Jokes[x]);
         Jokes.removeAt(x);
         Id = tmp[0].toInt();
         Content = tmp[1];
