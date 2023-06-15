@@ -98,6 +98,7 @@ void Controller::keyPressEvent(qint32 key)
             callChangeXVisibility(2,2,false);
             callChangeXVisibility(2,3,false);
             callChangeXVisibility(2,4,false);
+            callPlaySfxInQML("sounds/familiada_between.mp3");
         }
     }
     else if( key == Qt::Key_D )
@@ -127,6 +128,13 @@ void Controller::keyPressEvent(qint32 key)
             callChangeXVisibility(2,2,false);
             callChangeXVisibility(2,3,false);
             callChangeXVisibility(2,4,false);
+            if(level<5)
+                callPlaySfxInQML("sounds/familiada_between.mp3");
+            else
+            {
+                callPlaySfxInQML("sounds/final_time.mp3");
+                // TODO show final UI, hide normal
+            }
         }
     }
     else if( key == Qt::Key_J )
