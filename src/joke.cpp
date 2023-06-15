@@ -40,7 +40,7 @@ void Joke::drawJoke()
         Jokes.removeAt(x);
         Id = tmp[0].toInt();
         Content = tmp[1];
-        Author = tmp[2];
+//        Author = tmp[2];
 
         if(Jokes.length()<=0)
         {

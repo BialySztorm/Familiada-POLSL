@@ -1,15 +1,14 @@
 
 #include "question.h"
 
-Question::Question(QObject *parent,quint32 id, QString question, quint32 multiplayer)
-    : QObject{parent}
+Question::Question(qint32 id, QString question, qint32 multiplayer): id{id}, question{question}, multiplayer{multiplayer}
 {
-    this->id = id;
-    this->question = question;
-    this->multiplayer = multiplayer;
+
 }
 
-void Question::addAnswer(QString answer, quint32 value)
+
+
+void Question::addAnswer(QString answer, qint32 value)
 {
     answers.append(answer);
     answersValue.append(value);
@@ -25,12 +24,12 @@ QString Question::print(QString src)
     return tmp;
 }
 
-quint32 Question::getAnswersNum()
+qint32 Question::getAnswersNum()
 {
     return answers.count();
 }
 
-QString Question::getAnswer(quint32 i)
+QString Question::getAnswer(qint32 i)
 {
     if(answers.count()>=i && i>0)
         return answers[i-1];
@@ -38,7 +37,7 @@ QString Question::getAnswer(quint32 i)
         return "";
 }
 
-quint32 Question::getAnswerValue(quint32 i)
+qint32 Question::getAnswerValue(qint32 i)
 {
     if(answers.count()>=i && i>0)
         return answersValue[i-1]*multiplayer;

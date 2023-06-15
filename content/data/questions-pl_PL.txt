@@ -1,0 +1,14 @@
+Identyfikator;Tresc;Typ
+6;Jakie komendy stosuje siê w tresurze psów?;1
+7;Inaczej agent;1
+8;Czego dodajemy do jedzenia ¿eby by³o ostrzejsze;1
+9;Coœ siódmego;1
+10;Które zwierzê mo¿na spotkaæ na spacerze na polach?;1
+11;Które produkty mo¿na kupiæ w tubce?;1
+12;Co mo¿e nas boleæ gdy jesteœmy bardzo zdenerwowani;2
+13;Dok¹d wieczorem mo¿na wyjœæ ze znajomymi?;1
+14;Zwierze które czasami mo¿e przejœæ przez droge to;1
+15;Do jakiego u¿¹dzenia zwykle nie czytamy instrukcji;1
+16;Po czym poznasz œwiêtego miko³aja;2
+17;Po co idziemy na poczte;1
+18;Mieszkaniec skandynawi;2

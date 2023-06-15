@@ -14,6 +14,10 @@ qt6_add_qml_module(content
     RESOURCES
         fonts/fonts.txt
         images/StrasburgerIco.ico
+        images/background.svg
+        images/big_X.svg
+        images/small_X.svg
+        images/Napis.svg
         sounds/answer_bells.mp3
         sounds/answer_good.mp3
         sounds/answer_repeat.mp3
@@ -23,5 +27,7 @@ qt6_add_qml_module(content
         sounds/familiada_sound.mp3
         sounds/final_time.mp3
         data/jokes-pl_PL.txt
-
+        data/questions-pl_PL.txt
+        data/questions_num-pl_PL.txt
+        data/answers-pl_PL.txt
 )

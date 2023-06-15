@@ -1,3 +1,14 @@
-Identyfikator;Tresc;Autor
-1;sdad;dasda
-2;dsad;sadsad
+Identyfikator;Tresc
+1;Co to jest ka³u¿a?   Ka³u¿a "po wojskowemu", to jest akwen wodny bez znaczenia strategicznego
+2;Studia, od godziny trwa wyk³ad. Jeden ze studentów pyta:  Czy móg³by pan profesor powtórzyæ?  Proszê bardzo. Od którego momentu?  Od "dzieñ dobry pañstwu".
+3;Panie doktorze mam cukrzycê, niedow³ad prawej rêki, grzybicê, mia¿d¿ycê, reumatyzm, skoliozê.... Mój Bo¿e, a czego pani nie ma?  Zêbów, panie doktorze.Panie doktorze mam cukrzycê, niedow³ad prawej rêki, grzybicê, mia¿d¿ycê, reumatyzm, skoliozê.... Mój Bo¿e, a czego pani nie ma?  Zêbów, panie doktorze.
+4;Rodzinka wybra³a siê na obiad niedzielny. Tato zaprosi³, zamówi³. Posz³a zupa, drugie danie, deser, ale coœ pozostawa³o na talerzach. Prosi kelnera: Mo¿na na sekundkê? Chcielibyœmy to, co zosta³o, zabraæ dla pieska. Na to córeczka: Hura! Bêdziemy mieli pieska!
+5;Dwóch mê¿czyzn siedzi w kawiarni i rozmawia na temat ¿on. Jeden mówi, ¿e tak bardzo siê boi ¿ony, ¿e kiedy wraca do domu, denerwuje siê ju¿ na schodach, ¿e ¿ona bêdzie mia³a o coœ pretensje. A kolega odpowiada na to: A ja w ogóle siê nie bojê mojej ¿ony. Tylko jeszcze nie wiem, jak jej to powiedzieæ.
+6;Para przysz³a do teatru, stoj¹ w kolejce po bilety. S³ysz¹, jak mê¿czyzna przed nimi kupuje: "Tristan i Izolda", dwa bilety proszê. Kiedy przychodzi kolej na mê¿czyznê mówi: Roman i Ewa, te¿ dwa bilety proszê.
+7;Dwóch ¿o³nierzy wywiadowców sz³o przez las, nagle natrafili na œlady nieprzyjaciela. Jeden z nich, starszy stopniem, mówi do m³odszego: S³uchajcie szeregowy, idŸcie po tych œladach i zobaczcie, dok¹d nieprzyjaciel poszed³. A pan, panie kapralu? Ja sprawdzê, sk¹d przyszed³.
+8;Blondynka przychodzi do sklepu, chce kupiæ pastê do butów. Dzieñ dobry. Dzieñ dobry pani. Chcia³am prosiæ o pastê do butów. Ale do jakich? Numer 39.
+9;¯ona pyta mê¿a wracaj¹cego z orkiestry: Co wy w tej orkiestrze robicie?  No wiesz, pijemy, palimy...  A kiedy œpiewacie? Jak wracamy.
+10;Rzecz dzieje siê w koœciele. M³oda dziewczynka pyta mamê: Mamo, dlaczego pani m³oda jest ubrana tak na bia³o, piêknie? Bo chce pokazaæ, jaka jest szczêœliwa. Mamo, a dlaczego pan m³ody jest ubrany na czarno?
+11;Przybiega leœnik do leœnika, zdenerwowany i mówi: Stasiek, widzia³em, jak dzik zaatakowa³ twoj¹ ¿onê. Jak j¹ zaatakowa³, to niech siê teraz broni.
+12;Dwie s¹siadki spotka³y siê przed domem na ulicy i jedna do drugiej mówi: S¹siadko, ale pani m¹¿ bardzo ³adnie wygl¹da w tym nowym garniturze. A ona mówi: Droga s¹siadko, to nie jest nowy garnitur. Tylko to jest nowy m¹¿.
+13;Rzecz siê dzieje w domu, rodzina przy stole. Dorastaj¹ca, ³adna córka wraca do domu wieczorem z pierwszej randki ze swoim nowym ch³opakiem i ojciec do niej mówi: Siadaj kochanie, bo muszê coœ Ci powiedzieæ. Nie wiem, czy widzia³aœ, ¿e masz tu z przodu w rajstopach tak¹ dziurkê ma³¹. A tak, mam, ale to nic wielkiego, nowe siê kupi. Ojciec tak na ni¹ patrzy i mówi: Ale jak wychodzi³aœ to mia³aœ j¹ z ty³u

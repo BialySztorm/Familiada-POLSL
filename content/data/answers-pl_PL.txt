@@ -1,0 +1,65 @@
+Identyfikator;Id_pytania;tresc;punkty
+3;6;Siad;25
+9;6;Aport;22
+10;6;Noga;17
+11;6;Waruj;13
+12;6;Zostañ;10
+13;6;Daj g³os;8
+14;7;Szpieg;28
+15;7;Przedstawiciel;18
+16;7;Reprezentant;16
+17;7;Tajniak;13
+19;7;Poœrednik;11
+20;7;Akwizytor;7
+21;8;Pieprzu;23
+22;8;Papryki;19
+23;8;Chrzanu;16
+24;8;Czosnku;14
+25;8;Octu;11
+26;8;Musztardy;8
+27;9;Niebo;26
+28;9;Poty;21
+29;9;Godzina;20
+30;9;Pieczêæ;18
+31;9;Dzieñ tygodnia;10
+33;10;Sarne;25
+34;10;Zaj¹ca;21
+35;10;Dzika;19
+36;10;Bociana;12
+37;10;Czaplê;10
+38;10;Lisa;8
+39;11;Krem do r¹k;28
+40;11;Pasta do zêbów;21
+41;11;Klej;18
+42;11;Farba;15
+43;11;Mleczko;13
+44;12;Brzuch;38
+45;12;G³owa;35
+46;12;Serce;19
+47;13;Do kina;30
+48;13;Do pubu;24
+49;13;Do teatru;22
+50;13;Do restauracji;19
+51;14;Pies;24
+52;14;Kot;22
+53;14;Je¿;15
+54;14;Sarna;13
+55;14;Krowa;11
+56;14;Zaj¹c;8
+57;15;Telewizora;25
+58;15;Komputera;22
+59;15;Robota kuchennego;18
+60;15;Pralki;12
+61;15;Zmywarki;9
+62;15;Odkurzacza;8
+63;16;Bia³ej brodzie;44
+64;16;Czerwonym ubraniu;28
+65;16;Worku z prezentami;24
+66;17;Odebraæ list;34
+67;17;Odebraæ paczkê;25
+68;17;Wys³aæ list;19
+69;17;Wys³aæ paczkê;10
+70;17;Kupiæ znaczki;6
+71;18;Szwed;37
+72;18;Norweg;35
+73;18;Duñczyk;21
