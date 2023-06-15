@@ -33,7 +33,6 @@ private:
     QList<Question> questions;
     QList<QString> usedQuestions;
     QList<QString> usedSpecialQuestions;
-    qint32 currentQuestion;
 
     qint32 drawQuestion(qint32 type);
 };

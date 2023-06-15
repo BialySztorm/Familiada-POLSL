@@ -9,7 +9,6 @@
 Game::Game(QObject *parent)
     : QObject{parent}
 {
-    currentQuestion = 0;
     reset();
 }
 
@@ -189,21 +188,21 @@ qint32 Game::getPoints(qint32 level, qint32 question)
     return questions[level].getAnswerValue(question);
 }
 
-void Game::undoScore(qint32 team)
-{
-    if(team == 1)
-    {
-        score1 -= tmp;
-    }
-    else if(team == 2)
-    {
-        score2 -= tmp;
-    }
-    tmp = 0;
-}
+//void Game::undoScore(qint32 team)
+//{
+//    if(team == 1)
+//    {
+//        score1 -= tmp;
+//    }
+//    else if(team == 2)
+//    {
+//        score2 -= tmp;
+//    }
+//    tmp = 0;
+//}
 
-void Game::undoScore(qint32 question, qint32 answer)
-{
-    score0 -= questions[question].getAnswerValue(answer);
-}
+//void Game::undoScore(qint32 question, qint32 answer)
+//{
+//    score0 -= questions[question].getAnswerValue(answer);
+//}
 
