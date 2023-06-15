@@ -9,6 +9,7 @@ Controller::Controller(QObject *parent)
     team = 0;
     teamMistakes[0] = 0;
     teamMistakes[1] = 0;
+    lastAnswer = 0;
 }
 
 void Controller::keyPressEvent(qint32 key)
@@ -32,24 +33,35 @@ void Controller::keyPressEvent(qint32 key)
     else if( key == Qt::Key_Z )
     {
         // TODO undo final mistake
+        // hide answer, substract points
     }
     else if( key == Qt::Key_X )
     {
+        callChangeXVisibility(team,4,false);
         if(team && teamMistakes[team-1]<3)
         {
-            teamMistakes[team-1]++;
             // TODO hide X
+            callChangeXVisibility(team,3,false);
             // TODO show x
+            callChangeXVisibility(team,++teamMistakes[team-1],true);
             // TODO play sound
+            callPlaySfxInQML("sounds/answer_wrong.mp3");
         }
+        qDebug()<<"x";
     }
     else if( key == Qt::Key_C )
     {
         if(team)
         {
             // TODO hide x
+            callChangeXVisibility(team,1,false);
+            callChangeXVisibility(team,2,false);
+            callChangeXVisibility(team,3,false);
+            teamMistakes[team-1] = 0;
             // TODO show X
+            callChangeXVisibility(team,4,true);
             // TODO play sound
+            callPlaySfxInQML("sounds/answer_wrong.mp3");
         }
     }
     else if( key == Qt::Key_A )
@@ -57,22 +69,57 @@ void Controller::keyPressEvent(qint32 key)
         if(level>1)
         {
             level--;
-            if(level == 4)
+            if(!isPointsAdded && level <5)
             {
-                // TODO change question with no points
+                // Add points
             }
-            // TODO change question (parse team for adding points)
+            else
+            {
+                isPointsAdded = false;
+            }
+            // TODO change question
+            // get answer num, insert to answers
             // TODO hide X & x
+            callChangeXVisibility(1,1,false);
+            callChangeXVisibility(1,2,false);
+            callChangeXVisibility(1,3,false);
+            callChangeXVisibility(1,4,false);
+            callChangeXVisibility(2,1,false);
+            callChangeXVisibility(2,2,false);
+            callChangeXVisibility(2,3,false);
+            callChangeXVisibility(2,4,false);
         }
     }
     else if( key == Qt::Key_D )
     {
-        if(level<4)
+        if(level<5)
         {
             level ++;
-            // TODO change question (parse team for adding points)
-            // TODO hide X & x
+            if(!isPointsAdded)
+            {
+                // Add points
+            }
+            else
+            {
+                isPointsAdded = false;
+            }
+            // TODO change question
+            // check if any team have score >300, than level = 5
+            // get answer num, insert to answers
+            // hide X & x
+            callChangeXVisibility(1,1,false);
+            callChangeXVisibility(1,2,false);
+            callChangeXVisibility(1,3,false);
+            callChangeXVisibility(1,4,false);
+            callChangeXVisibility(2,1,false);
+            callChangeXVisibility(2,2,false);
+            callChangeXVisibility(2,3,false);
+            callChangeXVisibility(2,4,false);
         }
+    }
+    else if( key == Qt::Key_J )
+    {
+        callDrawJoke();
     }
     else if( key == Qt::Key_1 )
     {
@@ -106,5 +153,35 @@ void Controller::reset()
     team = 0;
     teamMistakes[0] = 0;
     teamMistakes[1] = 0;
+
+    callChangeXVisibility(1,1,false);
+    callChangeXVisibility(1,2,false);
+    callChangeXVisibility(1,3,false);
+    callChangeXVisibility(1,4,false);
+    callChangeXVisibility(2,1,false);
+    callChangeXVisibility(2,2,false);
+    callChangeXVisibility(2,3,false);
+    callChangeXVisibility(2,4,false);
+
+}
+
+void Controller::callPlaySfxInQML(QString src)
+{
+    emit doPlaySfx(src);
+}
+
+void Controller::callChangeXVisibility(qint32 x, qint32 y, bool value)
+{
+    emit doChangeXVisibility(x,y,value);
+}
+
+void Controller::callChangeScore(qint32 x, qint32 value)
+{
+    emit doChangeScore(x,value);
+}
+
+void Controller::callDrawJoke()
+{
+    emit doOpenJoke();
 }
 

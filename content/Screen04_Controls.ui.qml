@@ -27,58 +27,63 @@ Item {
             Text {
                 id: text1
                 text: qsTr("Sterowanie:")
-                font.pixelSize: parent.width / 10
+                font.pixelSize: parent.width / 12
             }
 
             Text {
                 id: text2
                 text: qsTr("q - wybierz lewą drużynę")
-                font.pixelSize: parent.width / 15
+                font.pixelSize: parent.width / 18
             }
             Text {
                 id: text3
                 text: qsTr("w - wybierz brak drużyny")
-                font.pixelSize: parent.width / 15
+                font.pixelSize: parent.width / 18
             }
             Text {
                 id: text4
                 text: qsTr("e - wybierz prawą drużynę")
-                font.pixelSize: parent.width / 15
+                font.pixelSize: parent.width / 18
             }
             Text {
                 id: text5
                 text: qsTr("1-6 - odsłoń odpowiedź")
-                font.pixelSize: parent.width / 15
+                font.pixelSize: parent.width / 18
             }
             Text {
                 id: text6
                 text: qsTr("x - błędna odpowiedź")
-                font.pixelSize: parent.width / 15
+                font.pixelSize: parent.width / 18
             }
             Text {
                 id: text7
                 text: qsTr("c - całkowicie błędna odpowiedź")
-                font.pixelSize: parent.width / 15
+                font.pixelSize: parent.width / 18
             }
             Text {
                 id: text8
-                text: qsTr("a - poprzednie pytanie")
-                font.pixelSize: parent.width / 15
+                text: qsTr("s - przyznaj punkty")
+                font.pixelSize: parent.width / 18
             }
             Text {
                 id: text9
-                text: qsTr("d - następne pytanie")
-                font.pixelSize: parent.width / 15
+                text: qsTr("a - poprzednie pytanie")
+                font.pixelSize: parent.width / 18
             }
             Text {
                 id: text10
-                text: qsTr("z - anuluj ostatnią odpowiedź (finał)")
-                font.pixelSize: parent.width / 15
+                text: qsTr("d - następne pytanie")
+                font.pixelSize: parent.width / 18
             }
             Text {
                 id: text11
+                text: qsTr("z - anuluj ostatnią odpowiedź (finał)")
+                font.pixelSize: parent.width / 18
+            }
+            Text {
+                id: text12
                 text: qsTr("j - wyświetl żart")
-                font.pixelSize: parent.width / 15
+                font.pixelSize: parent.width / 18
             }
         }
     }

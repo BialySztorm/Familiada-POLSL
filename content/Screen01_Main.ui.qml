@@ -17,13 +17,20 @@ Item {
         id: rectangle
         width: parent.width
         height: parent.height
-        color: Constants.backgroundColor
-
+        color: "#000000"
+        Image {
+            id: napis
+            anchors.fill: parent
+            source: "images/Napis.svg"
+            fillMode: Image.PreserveAspectFit
+        }
         Button {
             id: startBtn
             text: qsTr("Start Game")
             anchors.left: parent.left
             anchors.bottom: parent.bottom
+            highlighted: false
+            flat: false
             anchors.leftMargin: parent.width / 50
             anchors.bottomMargin: parent.width / 50
             font.pointSize: parent.width / 50

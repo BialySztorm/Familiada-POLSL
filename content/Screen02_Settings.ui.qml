@@ -17,8 +17,7 @@ Item {
         id: rectangle
         width: parent.width
         height: parent.height
-
-        color: Constants.backgroundColor
+        color: "#000000"
 
         GridLayout {
             id: grid
@@ -28,6 +27,7 @@ Item {
             columns: 2
             Text {
                 id: screenTitleText
+                color: "#ffffff"
                 Layout.columnSpan: 2
                 text: qsTr("Settings")
                 font.pixelSize: 40
@@ -35,6 +35,7 @@ Item {
             }
             Text {
                 id: musicVolumeText
+                color: "#ffffff"
                 text: qsTr("Music Volume")
                 font.pointSize: parent.parent.width / 50
             }
@@ -45,20 +46,25 @@ Item {
             }
             Text {
                 id: sfxVolumeText
+                color: "#ffffff"
                 text: qsTr("Effects Volume")
                 font.pixelSize: parent.parent.width / 50
             }
             Slider {
                 id: sfxVolumeSlider
                 value: 0.5
+                onMoved: player1.audioOutput.volume = this.value
             }
             Text {
                 id: languageText
+                visible: false
+                color: "#ffffff"
                 text: qsTr("Language")
                 font.pixelSize: parent.parent.width / 50
             }
             ComboBox {
                 id: languageComboBox
+                visible: false
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
             }
         }
