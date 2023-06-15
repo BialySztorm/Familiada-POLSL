@@ -111,7 +111,35 @@ void Game::reset()
 
 
     }while(questions.count()<9);
+
+    for(qint32 i = 0; i< questions.count(); i++)
+    {
+        QFile answerFile(":/content/data/answers-pl_PL.txt");
+        if (answerFile.open(QIODevice::ReadOnly))
+        {
+            QTextStream in(&answerFile);
+            if(!in.atEnd())
+                QString line = in.readLine();
+
+            while (!in.atEnd())
+            {
+                QString tmp2 = in.readLine();
+                QList<QString> tmp3 = tmp2.split(';');
+//                qDebug()<<tmp3[1].toInt();
+
+                if(tmp3[1].toInt() == questions[i].getId())
+                {
+                    questions[i].addAnswer(tmp3[2],tmp3[3].toInt());
+                }
+
+            }
+
+            answerFile.close();
+        }
+    }
+
 //    qDebug()<<questions.count();
+//    qDebug()<<questions[1].getAnswersNum();
 
 
 }
@@ -149,6 +177,16 @@ qint32 Game::getScore(qint32 team)
 qint32 Game::getAnswersNum(qint32 question)
 {
     return questions[question].getAnswersNum();
+}
+
+QString Game::getAnswer(qint32 level, qint32 question)
+{
+    return questions[level].getAnswer(question);
+}
+
+qint32 Game::getPoints(qint32 level, qint32 question)
+{
+    return questions[level].getAnswerValue(question);
 }
 
 void Game::undoScore(qint32 team)

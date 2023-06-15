@@ -18,6 +18,8 @@ public:
     void addScore(qint32 question, qint32 answer);
     qint32 getScore(qint32 team);
     qint32 getAnswersNum(qint32 question);
+    QString getAnswer(qint32 level, qint32 question);
+    qint32 getPoints(qint32 level, qint32 question);
 
     void undoScore(qint32 team);
     void undoScore(qint32 question,qint32 answer);

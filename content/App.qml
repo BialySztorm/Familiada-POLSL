@@ -102,11 +102,11 @@ Window {
     function changeScore(x,value)
     {
         if(x === 0)
-            val0 = value
+            gameScreen.val0 = value
         else if(x === 1)
-            val1 = value
+            gameScreen.val1 = value
         else if(x === 2)
-            val2 = value
+            gameScreen.val2 = value
     }
 
     function toggleSelection(x)

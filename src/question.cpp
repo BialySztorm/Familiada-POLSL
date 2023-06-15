@@ -24,6 +24,11 @@ QString Question::print(QString src)
     return tmp;
 }
 
+qint32 Question::getId()
+{
+    return id;
+}
+
 qint32 Question::getAnswersNum()
 {
     return answers.count();

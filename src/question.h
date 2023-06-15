@@ -14,6 +14,7 @@ public:
 
     void addAnswer(QString answer, qint32 value);
     QString print(QString src);
+    qint32 getId();
     qint32 getAnswersNum();
     QString getAnswer(qint32 i);
     qint32 getAnswerValue(qint32 i);

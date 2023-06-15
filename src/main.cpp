@@ -47,6 +47,7 @@ int main(int argc, char *argv[])
 
     // add controller
     Controller* controller = new Controller();
+    controller->setGameRef(game);
     engine.rootContext()->setContextProperty("controller", controller);
 
     if (engine.rootObjects().isEmpty()) {
