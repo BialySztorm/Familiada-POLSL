@@ -109,6 +109,28 @@ Window {
             val2 = value
     }
 
+    function toggleSelection(x)
+    {
+        if(x === 0)
+        {
+            gameScreen.rect0 = 3
+            gameScreen.rect1 = 0
+            gameScreen.rect2 = 0
+        }
+        else if(x === 1)
+        {
+            gameScreen.rect0 = 0
+            gameScreen.rect1 = 3
+            gameScreen.rect2 = 0
+        }
+        else if(x === 2)
+        {
+            gameScreen.rect0 = 0
+            gameScreen.rect1 = 0
+            gameScreen.rect2 = 3
+        }
+    }
+
     MessageDialog {
         id: joke1
         buttons: MessageDialog.Ok
@@ -299,6 +321,9 @@ Window {
         }
         onDoSetAnswerVisibility:{
             setAnswerVisibility(x,value)
+        }
+        onDoToggleSelection:{
+            toggleSelection(x)
         }
     }
 }

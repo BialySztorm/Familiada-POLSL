@@ -19,16 +19,19 @@ void Controller::keyPressEvent(qint32 key)
     {
         team = 1;
         // TODO highlight the selected team
+        callToggleSelection(1);
     }
     else if( key == Qt::Key_W )
     {
         team = 0;
         // TODO highlight the selected team
+        callToggleSelection(0);
     }
     else if( key == Qt::Key_E )
     {
         team = 2;
         // TODO highlight the selected team
+        callToggleSelection(2);
     }
     else if( key == Qt::Key_Z )
     {
@@ -178,6 +181,11 @@ void Controller::callChangeXVisibility(qint32 x, qint32 y, bool value)
 void Controller::callChangeScore(qint32 x, qint32 value)
 {
     emit doChangeScore(x,value);
+}
+
+void Controller::callToggleSelection(qint32 x)
+{
+    emit doToggleSelection(x);
 }
 
 void Controller::callDrawJoke()

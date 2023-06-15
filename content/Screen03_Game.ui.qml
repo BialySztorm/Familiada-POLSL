@@ -40,6 +40,9 @@ Item {
     property alias row4: row4
     property alias row5: row5
     property alias row6: row6
+    property alias rect0: rectangle1.border.width
+    property alias rect1: rectangle2.border.width
+    property alias rect2: rectangle3.border.width
 
     Rectangle {
         id: rectangle
@@ -328,6 +331,8 @@ Item {
             width: parent.width * 0.15
             height: parent.height * 0.15
             color: Constants.boardColor
+            border.color: "#80227f"
+            border.width: 3
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
             anchors.topMargin: parent.heigth * 0.025
@@ -350,6 +355,8 @@ Item {
             width: parent.width * 0.15
             height: parent.height * 0.15
             color: Constants.boardColor
+            border.color: "#1340ec"
+            border.width: 0
             anchors.verticalCenter: parent.verticalCenter
             anchors.left: parent.left
             anchors.leftMargin: parent.width * 0.005
@@ -372,6 +379,8 @@ Item {
             width: parent.width * 0.15
             height: parent.height * 0.15
             color: Constants.boardColor
+            border.color: "#f2030d"
+            border.width: 0
             anchors.verticalCenter: parent.verticalCenter
             anchors.right: parent.right
             anchors.rightMargin: parent.width * 0.005
