@@ -52,7 +52,7 @@ Item {
             }
             Slider {
                 id: sfxVolumeSlider
-                value: 0.5
+                value: 1
                 onMoved: player1.audioOutput.volume = this.value
             }
             Text {

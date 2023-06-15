@@ -213,7 +213,7 @@ Window {
         source: "sounds/familiada_intro.mp3"
         loops: MediaPLayer.Infinite
         audioOutput: AudioOutput {
-            volume: 1
+            volume: 0.5
         }
     }
     MediaPlayer {
