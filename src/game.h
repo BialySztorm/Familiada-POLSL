@@ -35,6 +35,8 @@ private:
     QList<QString> usedQuestions;
     QList<QString> usedSpecialQuestions;
 
+//    QString fixString(QString tmp);
+
     qint32 drawQuestion(qint32 type);
 };
 

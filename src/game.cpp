@@ -5,6 +5,7 @@
 #include <QTextStream>
 #include <QRandomGenerator>
 #include <QDebug>
+#include <QLocale>
 
 Game::Game(QObject *parent)
     : QObject{parent}
@@ -50,12 +51,14 @@ void Game::reset()
     if (questionFile.open(QIODevice::ReadOnly))
     {
         QTextStream in(&questionFile);
+        in.setLocale(QLocale::Polish);
         if(!in.atEnd())
-            QString line = in.readLine();
+            QString line = in.readLine().toLocal8Bit();
 
         while (!in.atEnd())
         {
             QString tmp2 = in.readLine();
+//            qDebug()<<tmp2;
 
             tmp1.append(tmp2.split(';'));
 
@@ -64,9 +67,9 @@ void Game::reset()
     }
     do
     {
-        if(commonQuestionNum-usedQuestions.count()<3)
+        if(commonQuestionNum-usedQuestions.count()<=0)
             usedQuestions.clear();
-        if(specialQuestionNum-usedSpecialQuestions.count()<3)
+        if(specialQuestionNum-usedSpecialQuestions.count()<=0)
             usedSpecialQuestions.clear();
         if(questions.count()<2 || questions.count()>=4)
         {
@@ -116,15 +119,21 @@ void Game::reset()
         QFile answerFile(":/content/data/answers-pl_PL.txt");
         if (answerFile.open(QIODevice::ReadOnly))
         {
-            QTextStream in(&answerFile);
+            QTextStream in;
+            in.setDevice(&answerFile);
+
             if(!in.atEnd())
+            {
                 QString line = in.readLine();
+//                qDebug() << line;
+//                qDebug() << line[0];
+            }
 
             while (!in.atEnd())
             {
-                QString tmp2 = in.readLine();
+                QString tmp2 = in.readLine().toLocal8Bit();
                 QList<QString> tmp3 = tmp2.split(';');
-//                qDebug()<<tmp3[1].toInt();
+//                qDebug()<<tmp2;
 
                 if(tmp3[1].toInt() == questions[i].getId())
                 {
@@ -148,6 +157,8 @@ void Game::reset()
             stream<<"Pytanie nr "<< i+1<<" " << questions[i].print();
         }
     }
+    file.close();
+
 
 //    qDebug()<<questions.count();
 //    qDebug()<<questions[1].getAnswersNum();
@@ -204,6 +215,18 @@ void Game::resetScore()
 {
     score0 = 0;
 }
+
+//QString Game::fixString(QString tmp)
+//{
+//    QString tmp1 = "";
+//    for(qint32 i = 0; i< tmp.length(); i++)
+//    {
+//        if(tmp[i]=='\ufffd')
+//        {
+
+//        }
+//    }
+//}
 
 //void Game::undoScore(qint32 team)
 //{

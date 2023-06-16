@@ -48,8 +48,8 @@ int main(int argc, char *argv[])
 
     // add controller
     Controller* controller = new Controller();
-    controller->setGameRef(game);
     engine.rootContext()->setContextProperty("controller", controller);
+    controller->setGameRef(game);
 
     if (engine.rootObjects().isEmpty()) {
         return -1;

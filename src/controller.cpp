@@ -134,6 +134,7 @@ void Controller::keyPressEvent(qint32 key)
                 isPointsAdded = false;
             }
             gameRef->resetScore();
+            callChangeScore(0,gameRef->getScore(0));
             // change question
             // check if any team have score >300, than level = 5
             if(gameRef->getScore(1)>= 300 || gameRef->getScore(2)>=300)
@@ -245,6 +246,8 @@ void Controller::reset()
 
     callSetAnswerVisibility(7,false);
     qint32 tmp= gameRef->getAnswersNum(0);
+//    qDebug()<<tmp;
+//    qDebug()<< gameRef->getAnswer(0,1);
     for(qint32 i = 1; i<= 6; i++)
     {
         if(i<=tmp)
