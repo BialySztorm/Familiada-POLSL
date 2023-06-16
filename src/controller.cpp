@@ -49,7 +49,7 @@ void Controller::keyPressEvent(qint32 key)
         {
             callPlaySfxInQML("sounds/answer_repeat.mp3");
         }
-        qDebug()<<"x";
+//        qDebug()<<"x";
     }
     else if( key == Qt::Key_C )
     {
