@@ -26,14 +26,15 @@ Item {
         }
         Button {
             id: startBtn
-            text: qsTr("Start Game")
+            text: qsTr("Rozpocznij grę")
             anchors.left: parent.left
             anchors.bottom: parent.bottom
+            font.family: "Familiada"
             highlighted: false
             flat: false
             anchors.leftMargin: parent.width / 50
             anchors.bottomMargin: parent.width / 50
-            font.pointSize: parent.width / 50
+            font.pointSize: parent.width / 60
 
             Connections {
                 target: startBtn
@@ -42,12 +43,13 @@ Item {
         }
         Button {
             id: optionsBtn
-            text: qsTr("Options")
+            text: qsTr("Opcje")
             anchors.right: parent.right
             anchors.bottom: parent.bottom
+            font.family: "Familiada"
             anchors.bottomMargin: parent.width / 50
             anchors.rightMargin: parent.width / 50
-            font.pointSize: parent.width / 50
+            font.pointSize: parent.width / 60
 
             Connections {
                 target: optionsBtn

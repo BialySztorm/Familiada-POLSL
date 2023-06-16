@@ -29,14 +29,16 @@ Item {
                 id: screenTitleText
                 color: "#ffffff"
                 Layout.columnSpan: 2
-                text: qsTr("Settings")
+                text: qsTr("Ustawienia")
                 font.pixelSize: 40
+                font.family: "Familiada"
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
             }
             Text {
                 id: musicVolumeText
                 color: "#ffffff"
-                text: qsTr("Music Volume")
+                text: qsTr("Głośność muzyki")
+                font.family: "Familiada"
                 font.pointSize: parent.parent.width / 50
             }
             Slider {
@@ -47,8 +49,9 @@ Item {
             Text {
                 id: sfxVolumeText
                 color: "#ffffff"
-                text: qsTr("Effects Volume")
+                text: qsTr("Głośność efektów")
                 font.pixelSize: parent.parent.width / 50
+                font.family: "Familiada"
             }
             Slider {
                 id: sfxVolumeSlider
@@ -70,10 +73,11 @@ Item {
         }
         Button {
             id: controlsBtn
-            text: qsTr("Show controls")
+            text: qsTr("Pokaż sterowanie")
             anchors.left: parent.left
             anchors.bottom: parent.bottom
-            font.pointSize: parent.width / 50
+            font.family: "Familiada"
+            font.pointSize: parent.width / 60
             anchors.bottomMargin: parent.width / 50
             anchors.leftMargin: parent.width / 50
             Connections {
@@ -84,10 +88,11 @@ Item {
 
         Button {
             id: returnBtn
-            text: qsTr("Return to menu")
+            text: qsTr("wróć do menu")
             anchors.right: parent.right
             anchors.bottom: parent.bottom
-            font.pointSize: parent.width / 50
+            font.family: "Familiada"
+            font.pointSize: parent.width / 60
             anchors.bottomMargin: parent.width / 50
             anchors.rightMargin: parent.width / 50
             Connections {

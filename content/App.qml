@@ -23,8 +23,8 @@ Window {
         {
             mainScreen.focus = true
             player.play()
-            controller.reset()
             game.reset()
+            controller.reset()
         }
         else if(stateName === "screen3")
         {

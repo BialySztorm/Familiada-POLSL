@@ -184,6 +184,7 @@ Item {
                         color: "#fff300"
                         text: qsTr("1")
                         font.pixelSize: parent.height / 2
+                        font.family: "Familiada"
                         padding: 5
                     }
                     Text {
@@ -191,6 +192,7 @@ Item {
                         color: "#fff300"
                         text: qsTr("..........................")
                         font.pixelSize: parent.height / 2
+                        font.family: "Familiada"
                         padding: 5
                         width: parent.width * 0.8
                     }
@@ -199,6 +201,7 @@ Item {
                         color: "#fff300"
                         text: qsTr("0")
                         font.pixelSize: parent.height / 2
+                        font.family: "Familiada"
                         padding: 5
                     }
                 }
@@ -211,6 +214,7 @@ Item {
                         color: "#fff300"
                         text: qsTr("2")
                         font.pixelSize: parent.height / 2
+                        font.family: "Familiada"
                         padding: 5
                     }
                     Text {
@@ -218,6 +222,7 @@ Item {
                         color: "#fff300"
                         text: qsTr("..........................")
                         font.pixelSize: parent.height / 2
+                        font.family: "Familiada"
                         padding: 5
                         width: parent.width * 0.8
                     }
@@ -226,6 +231,7 @@ Item {
                         color: "#fff300"
                         text: qsTr("0")
                         font.pixelSize: parent.height / 2
+                        font.family: "Familiada"
                         padding: 5
                     }
                 }
@@ -238,6 +244,7 @@ Item {
                         color: "#fff300"
                         text: qsTr("3")
                         font.pixelSize: parent.height / 2
+                        font.family: "Familiada"
                         padding: 5
                     }
                     Text {
@@ -245,6 +252,7 @@ Item {
                         color: "#fff300"
                         text: qsTr("..........................")
                         font.pixelSize: parent.height / 2
+                        font.family: "Familiada"
                         padding: 5
                         width: parent.width * 0.8
                     }
@@ -253,6 +261,7 @@ Item {
                         color: "#fff300"
                         text: qsTr("0")
                         font.pixelSize: parent.height / 2
+                        font.family: "Familiada"
                         padding: 5
                     }
                 }
@@ -265,6 +274,7 @@ Item {
                         color: "#fff300"
                         text: qsTr("4")
                         font.pixelSize: parent.height / 2
+                        font.family: "Familiada"
                         padding: 5
                     }
                     Text {
@@ -272,6 +282,7 @@ Item {
                         color: "#fff300"
                         text: qsTr("..........................")
                         font.pixelSize: parent.height / 2
+                        font.family: "Familiada"
                         padding: 5
                         width: parent.width * 0.8
                     }
@@ -280,6 +291,7 @@ Item {
                         color: "#fff300"
                         text: qsTr("0")
                         font.pixelSize: parent.height / 2
+                        font.family: "Familiada"
                         padding: 5
                     }
                 }
@@ -292,6 +304,7 @@ Item {
                         color: "#fff300"
                         text: qsTr("5")
                         font.pixelSize: parent.height / 2
+                        font.family: "Familiada"
                         padding: 5
                     }
                     Text {
@@ -299,6 +312,7 @@ Item {
                         color: "#fff300"
                         text: qsTr("..........................")
                         font.pixelSize: parent.height / 2
+                        font.family: "Familiada"
                         padding: 5
                         width: parent.width * 0.8
                     }
@@ -307,6 +321,7 @@ Item {
                         color: "#fff300"
                         text: qsTr("0")
                         font.pixelSize: parent.height / 2
+                        font.family: "Familiada"
                         padding: 5
                     }
                 }
@@ -319,6 +334,7 @@ Item {
                         color: "#fff300"
                         text: qsTr("6")
                         font.pixelSize: parent.height / 2
+                        font.family: "Familiada"
                         padding: 5
                     }
                     Text {
@@ -326,6 +342,7 @@ Item {
                         color: "#fff300"
                         text: qsTr("..........................")
                         font.pixelSize: parent.height / 2
+                        font.family: "Familiada"
                         padding: 5
                         width: parent.width * 0.8
                     }
@@ -334,6 +351,7 @@ Item {
                         color: "#fff300"
                         text: qsTr("0")
                         font.pixelSize: parent.height / 2
+                        font.family: "Familiada"
                         padding: 5
                     }
                 }
@@ -365,13 +383,15 @@ Item {
                             color: "#fff300"
                             text: qsTr("1")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                         }
                         Text {
                             id: answer7
                             color: "#fff300"
-                            text: qsTr("..........................")
+                            text: qsTr("..........")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                             width: parent.width * 0.7
                         }
@@ -380,6 +400,7 @@ Item {
                             color: "#fff300"
                             text: qsTr("0")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                         }
                     }
@@ -391,13 +412,15 @@ Item {
                             color: "#fff300"
                             text: qsTr("2")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                         }
                         Text {
                             id: answer8
                             color: "#fff300"
-                            text: qsTr("..........................")
+                            text: qsTr("..........")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                             width: parent.width * 0.7
                         }
@@ -406,6 +429,7 @@ Item {
                             color: "#fff300"
                             text: qsTr("0")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                         }
                     }
@@ -417,13 +441,15 @@ Item {
                             color: "#fff300"
                             text: qsTr("3")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                         }
                         Text {
                             id: answer9
                             color: "#fff300"
-                            text: qsTr("..........................")
+                            text: qsTr("..........")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                             width: parent.width * 0.7
                         }
@@ -432,6 +458,7 @@ Item {
                             color: "#fff300"
                             text: qsTr("0")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                         }
                     }
@@ -443,13 +470,15 @@ Item {
                             color: "#fff300"
                             text: qsTr("4")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                         }
                         Text {
                             id: answer10
                             color: "#fff300"
-                            text: qsTr("..........................")
+                            text: qsTr("..........")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                             width: parent.width * 0.7
                         }
@@ -458,6 +487,7 @@ Item {
                             color: "#fff300"
                             text: qsTr("0")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                         }
                     }
@@ -469,13 +499,15 @@ Item {
                             color: "#fff300"
                             text: qsTr("5")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                         }
                         Text {
                             id: answer11
                             color: "#fff300"
-                            text: qsTr("..........................")
+                            text: qsTr("..........")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                             width: parent.width * 0.7
                         }
@@ -484,6 +516,7 @@ Item {
                             color: "#fff300"
                             text: qsTr("0")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                         }
                     }
@@ -500,13 +533,15 @@ Item {
                             color: "#fff300"
                             text: qsTr("1")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                         }
                         Text {
                             id: answer12
                             color: "#fff300"
-                            text: qsTr("..........................")
+                            text: qsTr("..........")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                             width: parent.width * 0.7
                         }
@@ -515,6 +550,7 @@ Item {
                             color: "#fff300"
                             text: qsTr("0")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                         }
                     }
@@ -526,13 +562,15 @@ Item {
                             color: "#fff300"
                             text: qsTr("2")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                         }
                         Text {
                             id: answer13
                             color: "#fff300"
-                            text: qsTr("..........................")
+                            text: qsTr("..........")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                             width: parent.width * 0.7
                         }
@@ -541,6 +579,7 @@ Item {
                             color: "#fff300"
                             text: qsTr("0")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                         }
                     }
@@ -552,13 +591,15 @@ Item {
                             color: "#fff300"
                             text: qsTr("3")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                         }
                         Text {
                             id: answer14
                             color: "#fff300"
-                            text: qsTr("..........................")
+                            text: qsTr("..........")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                             width: parent.width * 0.7
                         }
@@ -567,6 +608,7 @@ Item {
                             color: "#fff300"
                             text: qsTr("0")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                         }
                     }
@@ -578,13 +620,15 @@ Item {
                             color: "#fff300"
                             text: qsTr("4")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                         }
                         Text {
                             id: answer15
                             color: "#fff300"
-                            text: qsTr("..........................")
+                            text: qsTr("..........")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                             width: parent.width * 0.7
                         }
@@ -593,6 +637,7 @@ Item {
                             color: "#fff300"
                             text: qsTr("0")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                         }
                     }
@@ -604,13 +649,15 @@ Item {
                             color: "#fff300"
                             text: qsTr("5")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                         }
                         Text {
                             id: answer16
                             color: "#fff300"
-                            text: qsTr("..........................")
+                            text: qsTr("..........")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                             width: parent.width * 0.7
                         }
@@ -619,6 +666,7 @@ Item {
                             color: "#fff300"
                             text: qsTr("0")
                             font.pixelSize: parent.height / 2
+                            font.family: "Familiada"
                             padding: 5
                         }
                     }
@@ -645,6 +693,7 @@ Item {
                 font.pixelSize: parent.height / 2
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
+                font.family: "Familiada"
                 anchors.horizontalCenter: parent.horizontalCenter
             }
         }
@@ -669,6 +718,7 @@ Item {
                 font.pixelSize: parent.height / 2
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
+                font.family: "Familiada"
                 anchors.horizontalCenter: parent.horizontalCenter
             }
         }
@@ -693,16 +743,18 @@ Item {
                 font.pixelSize: parent.height / 2
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
+                font.family: "Familiada"
                 anchors.horizontalCenter: parent.horizontalCenter
             }
         }
 
         Button {
             id: controlsBtn
-            text: qsTr("Show controls")
+            text: qsTr("Pokaż sterowanie")
             anchors.left: parent.left
             anchors.bottom: parent.bottom
-            font.pointSize: parent.width / 50
+            font.family: "Familiada"
+            font.pointSize: parent.width / 60
             anchors.bottomMargin: parent.width / 50
             anchors.leftMargin: parent.width / 50
             Connections {
@@ -713,10 +765,11 @@ Item {
 
         Button {
             id: returnBtn
-            text: qsTr("Return to menu")
+            text: qsTr("Wróc do menu")
             anchors.right: parent.right
             anchors.bottom: parent.bottom
-            font.pointSize: parent.width / 50
+            font.family: "Familiada"
+            font.pointSize: parent.width / 60
             anchors.bottomMargin: parent.width / 50
             anchors.rightMargin: parent.width / 50
             Connections {
