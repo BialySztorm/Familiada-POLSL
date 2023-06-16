@@ -28,11 +28,11 @@ void Controller::keyPressEvent(qint32 key)
         // highlight the selected team
         callToggleSelection(2);
     }
-    else if( key == Qt::Key_Z )
-    {
-        // TODO undo final mistake
-        // hide answer, substract points
-    }
+//    else if( key == Qt::Key_Z )
+//    {
+//        // TODO undo final mistake
+//        // hide answer, substract points
+//    }
     else if( key == Qt::Key_X )
     {
         callChangeXVisibility(team,4,false);

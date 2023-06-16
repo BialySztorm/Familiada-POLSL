@@ -75,11 +75,11 @@ Item {
                 text: qsTr("d - następne pytanie")
                 font.pixelSize: parent.width / 18
             }
-            Text {
-                id: text11
-                text: qsTr("z - anuluj ostatnią odpowiedź (finał)")
-                font.pixelSize: parent.width / 18
-            }
+//            Text {
+//                id: text11
+//                text: qsTr("z - anuluj ostatnią odpowiedź (finał)")
+//                font.pixelSize: parent.width / 18
+//            }
             Text {
                 id: text12
                 text: qsTr("j - wyświetl żart")
