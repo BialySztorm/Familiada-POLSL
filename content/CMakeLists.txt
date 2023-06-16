@@ -12,6 +12,7 @@ qt6_add_qml_module(content
         Screen03_Game.ui.qml
         Screen04_Controls.ui.qml
     RESOURCES
+        fonts/familiada.ttf
         fonts/fonts.txt
         images/StrasburgerIco.ico
         images/background.svg

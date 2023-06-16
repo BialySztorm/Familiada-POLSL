@@ -30,7 +30,7 @@ Item {
                 color: "#ffffff"
                 Layout.columnSpan: 2
                 text: qsTr("Ustawienia")
-                font.pixelSize: 40
+                font.pixelSize: parent.parent.width / 20
                 font.family: "Familiada"
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
             }
@@ -39,7 +39,7 @@ Item {
                 color: "#ffffff"
                 text: qsTr("Głośność muzyki")
                 font.family: "Familiada"
-                font.pointSize: parent.parent.width / 50
+                font.pixelSize: parent.parent.width / 50
             }
             Slider {
                 id: musicVolumeSlider
