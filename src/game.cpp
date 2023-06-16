@@ -64,11 +64,11 @@ void Game::reset()
     }
     do
     {
-        if(commonQuestionNum-usedQuestions.count()<5)
+        if(commonQuestionNum-usedQuestions.count()<3)
             usedQuestions.clear();
-        if(specialQuestionNum-usedSpecialQuestions.count()<5)
+        if(specialQuestionNum-usedSpecialQuestions.count()<3)
             usedSpecialQuestions.clear();
-        if(questions.count()<2 || questions.count()>4)
+        if(questions.count()<2 || questions.count()>=4)
         {
             qint32 x = QRandomGenerator::global()->bounded(commonQuestionNum-usedQuestions.count());
 
@@ -137,6 +137,18 @@ void Game::reset()
         }
     }
 
+    // wypisanie pytań do pliku
+    QString filename="Data.txt";
+    QFile file( filename );
+    if ( file.open(QIODevice::ReadWrite) )
+    {
+        QTextStream stream( &file );
+        for(qint32 i = 0; i< questions.count(); i++)
+        {
+            stream<<"Pytanie nr "<< i+1<<" " << questions[i].print();
+        }
+    }
+
 //    qDebug()<<questions.count();
 //    qDebug()<<questions[1].getAnswersNum();
 
@@ -186,6 +198,11 @@ QString Game::getAnswer(qint32 level, qint32 question)
 qint32 Game::getPoints(qint32 level, qint32 question)
 {
     return questions[level].getAnswerValue(question);
+}
+
+void Game::resetScore()
+{
+    score0 = 0;
 }
 
 //void Game::undoScore(qint32 team)

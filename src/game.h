@@ -23,6 +23,7 @@ public:
 
     void undoScore(qint32 team);
     void undoScore(qint32 question,qint32 answer);
+    void resetScore();
 
 
 private:

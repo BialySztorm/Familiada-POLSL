@@ -5,7 +5,6 @@
 Controller::Controller(QObject *parent)
     : QObject{parent}
 {
-    reset();
 }
 
 void Controller::keyPressEvent(qint32 key)
@@ -37,7 +36,7 @@ void Controller::keyPressEvent(qint32 key)
     else if( key == Qt::Key_X )
     {
         callChangeXVisibility(team,4,false);
-        if(team && teamMistakes[team-1]<3)
+        if(team && teamMistakes[team-1]<3 && level<5)
         {
             // hide X
             callChangeXVisibility(team,3,false);
@@ -46,11 +45,15 @@ void Controller::keyPressEvent(qint32 key)
             // play sound
             callPlaySfxInQML("sounds/answer_wrong.mp3");
         }
+        else if(level>=5)
+        {
+            callPlaySfxInQML("sounds/answer_repeat.mp3");
+        }
         qDebug()<<"x";
     }
     else if( key == Qt::Key_C )
     {
-        if(team)
+        if(team && level<5)
         {
             // hide x
             callChangeXVisibility(team,1,false);
@@ -61,6 +64,10 @@ void Controller::keyPressEvent(qint32 key)
             callChangeXVisibility(team,4,true);
             // play sound
             callPlaySfxInQML("sounds/answer_wrong.mp3");
+        }
+        else if(level>=5)
+        {
+            callPlaySfxInQML("sounds/answer_repeat.mp3");
         }
     }
     else if( key == Qt::Key_S )
@@ -87,8 +94,18 @@ void Controller::keyPressEvent(qint32 key)
             {
                 isPointsAdded = false;
             }
-            // TODO change question
+            gameRef->resetScore();
+            // change question
             // get answer num, insert to answers
+            qint32 tmp = gameRef->getAnswersNum(level-1);
+            for(qint32 i = 1; i<= 6; i++)
+            {
+                if(i<=tmp)
+                    callSetAnswerVisibility(i,true);
+                else
+                    callSetAnswerVisibility(i,false);
+                callSetAnswer(i,"....................",0);
+            }
             // hide X & x
             callChangeXVisibility(1,1,false);
             callChangeXVisibility(1,2,false);
@@ -116,9 +133,11 @@ void Controller::keyPressEvent(qint32 key)
             {
                 isPointsAdded = false;
             }
-            // TODO change question
+            gameRef->resetScore();
+            // change question
             // check if any team have score >300, than level = 5
-            // get answer num, insert to answers
+            if(gameRef->getScore(1)>= 300 || gameRef->getScore(2)>=300)
+                level = 5;
             // hide X & x
             callChangeXVisibility(1,1,false);
             callChangeXVisibility(1,2,false);
@@ -128,13 +147,32 @@ void Controller::keyPressEvent(qint32 key)
             callChangeXVisibility(2,2,false);
             callChangeXVisibility(2,3,false);
             callChangeXVisibility(2,4,false);
+            callPlaySfxInQML("sounds/familiada_between.mp3");
             if(level<5)
-                callPlaySfxInQML("sounds/familiada_between.mp3");
+            {
+                // get answer num, insert to answers
+                qint32 tmp = gameRef->getAnswersNum(level-1);
+                for(qint32 i = 1; i<= 6; i++)
+                {
+                    if(i<=tmp)
+                        callSetAnswerVisibility(i,true);
+                    else
+                        callSetAnswerVisibility(i,false);
+                    callSetAnswer(i,"....................",0);
+                }
+            }
             else
             {
-                callPlaySfxInQML("sounds/final_time.mp3");
-                // TODO show final UI, hide normal
+                // show final UI, hide normal
+                for(qint32 i = 1; i<=6; i++)
+                {
+                    callSetAnswerVisibility(i,false);
+                }
+                callSetAnswerVisibility(7,true);
             }
+        }
+        else{
+            callPlaySfxInQML("sounds/final_time.mp3");
         }
     }
     else if( key == Qt::Key_J )
@@ -194,11 +232,32 @@ void Controller::reset()
     callSetAnswer(4,"....................",0);
     callSetAnswer(5,"....................",0);
     callSetAnswer(6,"....................",0);
+    callSetAnswer(7,"....................",0);
+    callSetAnswer(8,"....................",0);
+    callSetAnswer(9,"....................",0);
+    callSetAnswer(10,"....................",0);
+    callSetAnswer(11,"....................",0);
+    callSetAnswer(12,"....................",0);
+    callSetAnswer(13,"....................",0);
+    callSetAnswer(14,"....................",0);
+    callSetAnswer(15,"....................",0);
+    callSetAnswer(16,"....................",0);
+
+    callSetAnswerVisibility(7,false);
+    qint32 tmp= gameRef->getAnswersNum(0);
+    for(qint32 i = 1; i<= 6; i++)
+    {
+        if(i<=tmp)
+            callSetAnswerVisibility(i,true);
+        else
+            callSetAnswerVisibility(i,false);
+    }
 }
 
 void Controller::setGameRef(Game *game)
 {
     gameRef = game;
+    reset();
 }
 
 void Controller::processAnswer(qint32 x)
@@ -223,10 +282,10 @@ void Controller::processAnswer(qint32 x)
     else
     {
         // call answer function
-        QString tmp1 = gameRef->getAnswer(lastAnswer,x);
-        qint32 tmp2 = gameRef->getPoints(lastAnswer++,x);
+        QString tmp1 = gameRef->getAnswer(lastAnswer%5+4,x);
+        qint32 tmp2 = gameRef->getPoints(lastAnswer++%5+4,x);
         callSetAnswer(lastAnswer+6,tmp1,tmp2);
-        gameRef->addScore(lastAnswer%5 + 3,x);
+        gameRef->addScore((lastAnswer-1)%5 + 3,x);
     }
     // add points
 

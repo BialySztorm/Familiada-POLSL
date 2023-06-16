@@ -14,6 +14,7 @@
 #include <QQmlContext>
 #include <QIcon>
 
+
 int main(int argc, char *argv[])
 {
     set_qt_environment();

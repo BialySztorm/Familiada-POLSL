@@ -28,18 +28,39 @@ Item {
     property alias ans4: answer4.text
     property alias ans5: answer5.text
     property alias ans6: answer6.text
+    property alias ans7: answer7.text
+    property alias ans8: answer8.text
+    property alias ans9: answer9.text
+    property alias ans10: answer10.text
+    property alias ans11: answer11.text
+    property alias ans12: answer12.text
+    property alias ans13: answer13.text
+    property alias ans14: answer14.text
+    property alias ans15: answer15.text
+    property alias ans16: answer16.text
     property alias pt1: points1.text
     property alias pt2: points2.text
     property alias pt3: points3.text
     property alias pt4: points4.text
     property alias pt5: points5.text
     property alias pt6: points6.text
+    property alias pt7: points7.text
+    property alias pt8: points8.text
+    property alias pt9: points9.text
+    property alias pt10: points10.text
+    property alias pt11: points11.text
+    property alias pt12: points12.text
+    property alias pt13: points13.text
+    property alias pt14: points14.text
+    property alias pt15: points15.text
+    property alias pt16: points16.text
     property alias row1: row1
     property alias row2: row2
     property alias row3: row3
     property alias row4: row4
     property alias row5: row5
     property alias row6: row6
+    property alias row7: row7
     property alias rect0: rectangle1.border.width
     property alias rect1: rectangle2.border.width
     property alias rect2: rectangle3.border.width
@@ -323,6 +344,284 @@ Item {
                 Row {
                     width: parent.width
                     height: parent.height / 10
+                }
+            }
+            Row {
+                id: row7
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.horizontalCenter: parent.horizontalCenter
+                width: parent.width * 0.6
+                height: parent.height
+                visible: false
+                Column {
+                    width: parent.width / 2
+                    height: parent.height
+                    topPadding: parent.height / 10
+                    Row {
+                        width: parent.width
+                        height: parent.height / 10
+                        Text {
+                            id: nr7
+                            color: "#fff300"
+                            text: qsTr("1")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                        }
+                        Text {
+                            id: answer7
+                            color: "#fff300"
+                            text: qsTr("..........................")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                            width: parent.width * 0.7
+                        }
+                        Text {
+                            id: points7
+                            color: "#fff300"
+                            text: qsTr("0")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                        }
+                    }
+                    Row {
+                        width: parent.width
+                        height: parent.height / 10
+                        Text {
+                            id: nr8
+                            color: "#fff300"
+                            text: qsTr("2")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                        }
+                        Text {
+                            id: answer8
+                            color: "#fff300"
+                            text: qsTr("..........................")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                            width: parent.width * 0.7
+                        }
+                        Text {
+                            id: points8
+                            color: "#fff300"
+                            text: qsTr("0")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                        }
+                    }
+                    Row {
+                        width: parent.width
+                        height: parent.height / 10
+                        Text {
+                            id: nr9
+                            color: "#fff300"
+                            text: qsTr("3")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                        }
+                        Text {
+                            id: answer9
+                            color: "#fff300"
+                            text: qsTr("..........................")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                            width: parent.width * 0.7
+                        }
+                        Text {
+                            id: points9
+                            color: "#fff300"
+                            text: qsTr("0")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                        }
+                    }
+                    Row {
+                        width: parent.width
+                        height: parent.height / 10
+                        Text {
+                            id: nr10
+                            color: "#fff300"
+                            text: qsTr("4")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                        }
+                        Text {
+                            id: answer10
+                            color: "#fff300"
+                            text: qsTr("..........................")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                            width: parent.width * 0.7
+                        }
+                        Text {
+                            id: points10
+                            color: "#fff300"
+                            text: qsTr("0")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                        }
+                    }
+                    Row {
+                        width: parent.width
+                        height: parent.height / 10
+                        Text {
+                            id: nr11
+                            color: "#fff300"
+                            text: qsTr("5")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                        }
+                        Text {
+                            id: answer11
+                            color: "#fff300"
+                            text: qsTr("..........................")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                            width: parent.width * 0.7
+                        }
+                        Text {
+                            id: points11
+                            color: "#fff300"
+                            text: qsTr("0")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                        }
+                    }
+                }
+                Column {
+                    width: parent.width / 2
+                    height: parent.height
+                    topPadding: parent.height / 10
+                    Row {
+                        width: parent.width
+                        height: parent.height / 10
+                        Text {
+                            id: nr12
+                            color: "#fff300"
+                            text: qsTr("1")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                        }
+                        Text {
+                            id: answer12
+                            color: "#fff300"
+                            text: qsTr("..........................")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                            width: parent.width * 0.7
+                        }
+                        Text {
+                            id: points12
+                            color: "#fff300"
+                            text: qsTr("0")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                        }
+                    }
+                    Row {
+                        width: parent.width
+                        height: parent.height / 10
+                        Text {
+                            id: nr13
+                            color: "#fff300"
+                            text: qsTr("2")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                        }
+                        Text {
+                            id: answer13
+                            color: "#fff300"
+                            text: qsTr("..........................")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                            width: parent.width * 0.7
+                        }
+                        Text {
+                            id: points13
+                            color: "#fff300"
+                            text: qsTr("0")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                        }
+                    }
+                    Row {
+                        width: parent.width
+                        height: parent.height / 10
+                        Text {
+                            id: nr14
+                            color: "#fff300"
+                            text: qsTr("3")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                        }
+                        Text {
+                            id: answer14
+                            color: "#fff300"
+                            text: qsTr("..........................")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                            width: parent.width * 0.7
+                        }
+                        Text {
+                            id: points14
+                            color: "#fff300"
+                            text: qsTr("0")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                        }
+                    }
+                    Row {
+                        width: parent.width
+                        height: parent.height / 10
+                        Text {
+                            id: nr15
+                            color: "#fff300"
+                            text: qsTr("4")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                        }
+                        Text {
+                            id: answer15
+                            color: "#fff300"
+                            text: qsTr("..........................")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                            width: parent.width * 0.7
+                        }
+                        Text {
+                            id: points15
+                            color: "#fff300"
+                            text: qsTr("0")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                        }
+                    }
+                    Row {
+                        width: parent.width
+                        height: parent.height / 10
+                        Text {
+                            id: nr16
+                            color: "#fff300"
+                            text: qsTr("5")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                        }
+                        Text {
+                            id: answer16
+                            color: "#fff300"
+                            text: qsTr("..........................")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                            width: parent.width * 0.7
+                        }
+                        Text {
+                            id: points16
+                            color: "#fff300"
+                            text: qsTr("0")
+                            font.pixelSize: parent.height / 2
+                            padding: 5
+                        }
+                    }
                 }
             }
         }

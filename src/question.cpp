@@ -14,12 +14,12 @@ void Question::addAnswer(QString answer, qint32 value)
     answersValue.append(value);
 }
 
-QString Question::print(QString src)
+QString Question::print()
 {
     QString tmp = "";
     tmp += question+"\n";
     for(int i = 0; i< answers.count(); i++)
-        tmp+= answers[i]+"\n";
+        tmp+= QString::number(i+1)+". "+answers[i]+"; "+QString::number(answersValue[i])+"\n";
 
     return tmp;
 }

@@ -177,6 +177,56 @@ Window {
             gameScreen.ans6 = ans
             gameScreen.pt6 = pt
         }
+        else if(nr === 7)
+        {
+            gameScreen.ans7 = ans
+            gameScreen.pt7 = pt
+        }
+        else if(nr === 8)
+        {
+            gameScreen.ans8 = ans
+            gameScreen.pt8 = pt
+        }
+        else if(nr === 9)
+        {
+            gameScreen.ans9 = ans
+            gameScreen.pt9 = pt
+        }
+        else if(nr === 10)
+        {
+            gameScreen.ans10 = ans
+            gameScreen.pt10 = pt
+        }
+        else if(nr === 11)
+        {
+            gameScreen.ans11 = ans
+            gameScreen.pt11 = pt
+        }
+        else if(nr === 12)
+        {
+            gameScreen.ans12 = ans
+            gameScreen.pt12 = pt
+        }
+        else if(nr === 13)
+        {
+            gameScreen.ans13 = ans
+            gameScreen.pt13 = pt
+        }
+        else if(nr === 14)
+        {
+            gameScreen.ans14 = ans
+            gameScreen.pt14 = pt
+        }
+        else if(nr === 15)
+        {
+            gameScreen.ans15 = ans
+            gameScreen.pt15 = pt
+        }
+        else if(nr === 16)
+        {
+            gameScreen.ans16 = ans
+            gameScreen.pt16 = pt
+        }
 
     }
 
@@ -205,6 +255,10 @@ Window {
         else if(x === 6)
         {
             gameScreen.row6.visible = value
+        }
+        else if(x === 7)
+        {
+            gameScreen.row7.visible = value
         }
     }
 
