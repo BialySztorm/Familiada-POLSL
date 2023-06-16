@@ -28,6 +28,7 @@ private:
     Game* gameRef;
 
     void processAnswer(qint32 x);
+    void hideX();
 
     void callPlaySfxInQML(QString src);
     void callChangeXVisibility(qint32 x,qint32 y,bool value);

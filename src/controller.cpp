@@ -35,11 +35,10 @@ void Controller::keyPressEvent(qint32 key)
 //    }
     else if( key == Qt::Key_X )
     {
-        callChangeXVisibility(team,4,false);
         if(team && teamMistakes[team-1]<3 && level<5)
         {
             // hide X
-            callChangeXVisibility(team,3,false);
+            callChangeXVisibility(team,4,false);
             // show x
             callChangeXVisibility(team,++teamMistakes[team-1],true);
             // play sound
@@ -107,14 +106,7 @@ void Controller::keyPressEvent(qint32 key)
                 callSetAnswer(i,"....................",0);
             }
             // hide X & x
-            callChangeXVisibility(1,1,false);
-            callChangeXVisibility(1,2,false);
-            callChangeXVisibility(1,3,false);
-            callChangeXVisibility(1,4,false);
-            callChangeXVisibility(2,1,false);
-            callChangeXVisibility(2,2,false);
-            callChangeXVisibility(2,3,false);
-            callChangeXVisibility(2,4,false);
+            hideX();
             callPlaySfxInQML("sounds/familiada_between.mp3");
         }
     }
@@ -140,14 +132,7 @@ void Controller::keyPressEvent(qint32 key)
             if(gameRef->getScore(1)>= 300 || gameRef->getScore(2)>=300)
                 level = 5;
             // hide X & x
-            callChangeXVisibility(1,1,false);
-            callChangeXVisibility(1,2,false);
-            callChangeXVisibility(1,3,false);
-            callChangeXVisibility(1,4,false);
-            callChangeXVisibility(2,1,false);
-            callChangeXVisibility(2,2,false);
-            callChangeXVisibility(2,3,false);
-            callChangeXVisibility(2,4,false);
+            hideX();
             callPlaySfxInQML("sounds/familiada_between.mp3");
             if(level<5)
             {
@@ -214,35 +199,16 @@ void Controller::reset()
     teamMistakes[1] = 0;
     lastAnswer = 0;
 
-    callChangeXVisibility(1,1,false);
-    callChangeXVisibility(1,2,false);
-    callChangeXVisibility(1,3,false);
-    callChangeXVisibility(1,4,false);
-    callChangeXVisibility(2,1,false);
-    callChangeXVisibility(2,2,false);
-    callChangeXVisibility(2,3,false);
-    callChangeXVisibility(2,4,false);
+    hideX();
 
     callChangeScore(0,0);
     callChangeScore(1,0);
     callChangeScore(2,0);
 
-    callSetAnswer(1,"....................",0);
-    callSetAnswer(2,"....................",0);
-    callSetAnswer(3,"....................",0);
-    callSetAnswer(4,"....................",0);
-    callSetAnswer(5,"....................",0);
-    callSetAnswer(6,"....................",0);
-    callSetAnswer(7,"....................",0);
-    callSetAnswer(8,"....................",0);
-    callSetAnswer(9,"....................",0);
-    callSetAnswer(10,"....................",0);
-    callSetAnswer(11,"....................",0);
-    callSetAnswer(12,"....................",0);
-    callSetAnswer(13,"....................",0);
-    callSetAnswer(14,"....................",0);
-    callSetAnswer(15,"....................",0);
-    callSetAnswer(16,"....................",0);
+    for(qint32 i = 1; i<=16; i++)
+    {
+        callSetAnswer(i,"....................",0);
+    }
 
     callSetAnswerVisibility(7,false);
     qint32 tmp= gameRef->getAnswersNum(0);
@@ -297,6 +263,13 @@ void Controller::processAnswer(qint32 x)
 
     // play sfx
     callPlaySfxInQML("sounds/answer_good.mp3");
+}
+
+void Controller::hideX()
+{
+    for(qint32 i = 1;i<=2; i++ )
+        for(qint32 j = 1; j<=4; j++)
+            callChangeXVisibility(i,j,false);
 }
 
 void Controller::callPlaySfxInQML(QString src)
