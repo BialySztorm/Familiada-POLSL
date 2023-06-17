@@ -66,7 +66,7 @@ void Controller::keyPressEvent(qint32 key)
         }
         else if(level>=5)
         {
-            callPlaySfxInQML("sounds/answer_repeat.mp3");
+            callPlaySfxInQML("sounds/final_time.mp3");
         }
     }
     else if( key == Qt::Key_S )

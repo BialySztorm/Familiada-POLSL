@@ -18,6 +18,7 @@ endif()
 
 qt_add_executable(${CMAKE_PROJECT_NAME} src/main.cpp src/game.cpp src/game.h src/joke.cpp src/joke.h src/controller.cpp src/controller.h src/question.cpp src/question.h)
 
+
 # qt_standard_project_setup() requires Qt 6.3 or higher. See https://doc.qt.io/qt-6/qt-standard-project-setup.html for details.
 if (${QT_VERSION_MINOR} GREATER_EQUAL 3)
 qt6_standard_project_setup()

@@ -3,13 +3,13 @@ Identyfikator;Id_pytania;tresc;punkty
 9;6;Aport;22
 10;6;Noga;17
 11;6;Waruj;13
-12;6;Zostañ;10
-13;6;Daj g³os;8
+12;6;Zostan;10
+13;6;Daj glos;8
 14;7;Szpieg;28
 15;7;Przedstawiciel;18
 16;7;Reprezentant;16
 17;7;Tajniak;13
-19;7;Poœrednik;11
+19;7;Posrednik;11
 20;7;Akwizytor;7
 21;8;Pieprzu;23
 22;8;Papryki;19
@@ -20,21 +20,21 @@ Identyfikator;Id_pytania;tresc;punkty
 27;9;Niebo;26
 28;9;Poty;21
 29;9;Godzina;20
-30;9;Pieczêæ;18
-31;9;Dzieñ tygodnia;10
+30;9;Pieczec;18
+31;9;Dzien tygodnia;10
 33;10;Sarne;25
-34;10;Zaj¹ca;21
+34;10;Zajaca;21
 35;10;Dzika;19
 36;10;Bociana;12
-37;10;Czaplê;10
+37;10;Czaple;10
 38;10;Lisa;8
-39;11;Krem do r¹k;28
-40;11;Pasta do zêbów;21
+39;11;Krem do rak;28
+40;11;Pasta do zebów;21
 41;11;Klej;18
 42;11;Farba;15
 43;11;Mleczko;13
 44;12;Brzuch;38
-45;12;G³owa;35
+45;12;Glowa;35
 46;12;Serce;19
 47;13;Do kina;30
 48;13;Do pubu;24
@@ -52,14 +52,83 @@ Identyfikator;Id_pytania;tresc;punkty
 60;15;Pralki;12
 61;15;Zmywarki;9
 62;15;Odkurzacza;8
-63;16;Bia³ej brodzie;44
+63;16;Bialej brodzie;44
 64;16;Czerwonym ubraniu;28
 65;16;Worku z prezentami;24
-66;17;Odebraæ list;34
-67;17;Odebraæ paczkê;25
-68;17;Wys³aæ list;19
-69;17;Wys³aæ paczkê;10
-70;17;Kupiæ znaczki;6
+66;17;Odebrac list;34
+67;17;Odebrac paczkê;25
+68;17;Wys³ac list;19
+69;17;Wys³ac paczkê;10
+70;17;Kupic znaczki;6
 71;18;Szwed;37
 72;18;Norweg;35
-73;18;Duñczyk;21
+73;18;Dunczyk;21
+74;19;Maslem;28
+75;19;Margaryna;19
+76;19;Dzemem;17
+77;19;Smalcem;9
+79;20;Kielbase;23
+80;20;Karkowke;20
+81;20;Kaszanke;15
+82;20;Skrzydelka;12
+83;20;Szaszlyki;10
+84;21;Dzem;27
+85;21;Ogorki;23
+86;21;Majonez;18
+87;21;Miod;14
+88;21;Musztarde;9
+89;22;Obcina;28
+90;22;Farbuje;24
+91;22;Stylizuje;14
+92;22;Myje;9
+93;22;Suszy;6
+94;24;Muzyka;19
+95;24;Zakupy;17
+96;24;Kapiel;14
+97;24;Spacer;13
+98;24;Pogoda;9
+99;23;Klucze;26
+100;23;Portfel;22
+101;23;Parasolke;16
+102;23;Rekawiczki;13
+103;23;Okulary;9
+104;25;Drzwi;25
+105;25;Podloga;21
+106;25;Okno;16
+107;25;Krzeslo;13
+108;25;Snieg;9
+109;26;Konik;23
+110;26;Fotel;21
+111;26;Kosz;14
+112;26;Hamak;12
+113;26;Kolyska;9
+114;27;Zaulek;29
+115;27;Traf;23
+116;27;Milosc;18
+117;27;Kiszka;10
+118;28;Pojazd;24
+119;28;Firma;21
+120;28;Rozmowa;18
+121;28;Lekcja;13
+122;28;Blog;9
+123;29;Lama;23
+124;29;Owca;22
+125;29;Stado;17
+126;29;Wataha;15
+127;29;Lawica;10
+128;29;Sfora;8
+129;30;Nike;38
+130;30;Adidas;33
+131;30;Reebok;28
+132;31;Komedia;42
+133;31;Familijny;37
+134;31;Przygodowy;33
+135;32;Golab;43
+136;32;Wrobel;38
+137;32;Sroka;33
+138;33;Mialcza;36
+139;33;Mrucza;33
+140;33;Lasza sie;29
+141;34;Kregle;40
+142;34;Bilard;32
+143;;Boule;19

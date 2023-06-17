@@ -30,7 +30,7 @@ Window {
         {
             gameScreen.focus = true
             player.stop()
-            player1.source = ""
+            player1.source = "sounds/familiada_between.mp3"
             player1.play()
         }
         if(controls.visible)

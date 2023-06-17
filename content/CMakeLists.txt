@@ -13,7 +13,6 @@ qt6_add_qml_module(content
         Screen04_Controls.ui.qml
     RESOURCES
         fonts/familiada.ttf
-        fonts/fonts.txt
         images/StrasburgerIco.ico
         images/background.svg
         images/big_X.svg

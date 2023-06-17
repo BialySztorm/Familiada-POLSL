@@ -1,14 +1,30 @@
 Identyfikator;Tresc;Typ
-6;Jakie komendy stosuje siê w tresurze psów?;1
+6;Jakie komendy stosuje siê w tresurze psow?;1
 7;Inaczej agent;1
-8;Czego dodajemy do jedzenia ¿eby by³o ostrzejsze;1
-9;Coœ siódmego;1
-10;Które zwierzê mo¿na spotkaæ na spacerze na polach?;1
-11;Które produkty mo¿na kupiæ w tubce?;1
-12;Co mo¿e nas boleæ gdy jesteœmy bardzo zdenerwowani;2
-13;Dok¹d wieczorem mo¿na wyjœæ ze znajomymi?;1
-14;Zwierze które czasami mo¿e przejœæ przez droge to;1
-15;Do jakiego u¿¹dzenia zwykle nie czytamy instrukcji;1
-16;Po czym poznasz œwiêtego miko³aja;2
+8;Czego dodajemy do jedzenia zeby by³o ostrzejsze;1
+9;Cos siodmego;1
+10;Ktore zwierze mozna spotkac na spacerze na polach?;1
+11;Ktore produkty mo¿na kupic w tubce?;1
+12;Co moze nas bolec gdy jestesmy bardzo zdenerwowani;2
+13;Dokad wieczorem mozna wyjsc ze znajomymi?;1
+14;Zwierze ktore czasami moze przejsc przez droge to;1
+15;Do jakiego uzadzenia zwykle nie czytamy instrukcji;1
+16;Po czym poznasz swietego mikolaja;2
 17;Po co idziemy na poczte;1
 18;Mieszkaniec skandynawi;2
+19;Czym smarujemy chleb?;1
+20;Co grillujemy?;1
+21;Co mozna kupic w sloiku?;1
+22;Co robi fryzjer z wlosami?;1
+23;Co ludzie czêsto gubia?;1
+24;Co moze poprawic humor?;1
+25;Co skrzypi?;1
+26;Cos bujanego;1
+27;Cos slepego;1
+28;Cos co mozna prowadzic;1
+29;Wiecej niz jedno zwierze to?;1
+30;Podaj znana marke butow sportowych;2
+31;Najczesciej ogladany gatunek filmu;2
+32;Ptaki ktore spotykamy w parku;2
+33;Co robia koty;2
+34;Sport z kula;2
