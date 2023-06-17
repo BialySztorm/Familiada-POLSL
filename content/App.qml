@@ -30,6 +30,8 @@ Window {
         {
             gameScreen.focus = true
             player.stop()
+            player1.source = ""
+            player1.play()
         }
         if(controls.visible)
             controls.visible = false

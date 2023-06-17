@@ -198,6 +198,7 @@ void Controller::reset()
     teamMistakes[0] = 0;
     teamMistakes[1] = 0;
     lastAnswer = 0;
+    isPointsAdded = false;
 
     hideX();
 
