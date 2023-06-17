@@ -42,10 +42,10 @@ Identyfikator;Id_pytania;tresc;punkty
 50;13;Do restauracji;19
 51;14;Pies;24
 52;14;Kot;22
-53;14;Je¿;15
+53;14;Jez;15
 54;14;Sarna;13
 55;14;Krowa;11
-56;14;Zaj¹c;8
+56;14;Zajac;8
 57;15;Telewizora;25
 58;15;Komputera;22
 59;15;Robota kuchennego;18
@@ -56,9 +56,9 @@ Identyfikator;Id_pytania;tresc;punkty
 64;16;Czerwonym ubraniu;28
 65;16;Worku z prezentami;24
 66;17;Odebrac list;34
-67;17;Odebrac paczkê;25
-68;17;Wys³ac list;19
-69;17;Wys³ac paczkê;10
+67;17;Odebrac paczke;25
+68;17;Wyslac list;19
+69;17;Wyslac paczke;10
 70;17;Kupic znaczki;6
 71;18;Szwed;37
 72;18;Norweg;35
