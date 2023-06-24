@@ -20,6 +20,7 @@ qt6_add_qml_module(content
         images/Napis.svg
         sounds/answer_bells.mp3
         sounds/answer_good.mp3
+        sounds/answer_good_1.mp3
         sounds/answer_repeat.mp3
         sounds/answer_wrong.mp3
         sounds/familiada_between.mp3

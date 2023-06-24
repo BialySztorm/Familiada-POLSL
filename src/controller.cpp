@@ -189,6 +189,10 @@ void Controller::keyPressEvent(qint32 key)
     {
         processAnswer(6);
     }
+//    else if( key == Qt::Key_0 )
+//    {
+//        processAnswer(0);
+//    }
 }
 
 void Controller::reset()
@@ -248,6 +252,8 @@ void Controller::processAnswer(qint32 x)
         }
         callSetAnswer(x,tmp1,tmp2);
         gameRef->addScore(level-1,x);
+        // play sfx
+        callPlaySfxInQML("sounds/answer_good.mp3");
     }
     else
     {
@@ -256,14 +262,13 @@ void Controller::processAnswer(qint32 x)
         qint32 tmp2 = gameRef->getPoints(lastAnswer++%5+4,x);
         callSetAnswer(lastAnswer+6,tmp1,tmp2);
         gameRef->addScore((lastAnswer-1)%5 + 3,x);
+        // play sfx
+        callPlaySfxInQML("sounds/answer_good_1.mp3");
+        // add own answer on 0
     }
     // add points
 
     callChangeScore(0,gameRef->getScore(0));
-
-
-    // play sfx
-    callPlaySfxInQML("sounds/answer_good.mp3");
 }
 
 void Controller::hideX()
