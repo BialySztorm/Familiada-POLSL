@@ -39,6 +39,7 @@ def platform():
     print("[1] - Windows")
     print("[2] - Linux")
     print("[3] - Mac")
+    print("[4] - All at once")
     print("[0] - Exit")
     action = input("Type Option: ")
     return action
@@ -64,6 +65,10 @@ if action == '1':
 elif action == '2':
     linux(version()) 
 elif action == '3':
+    mac(version())
+elif action == '4':
+    windows(version())
+    linux(version()) 
     mac(version())
 
 # print(version())
