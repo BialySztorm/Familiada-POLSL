@@ -2,8 +2,15 @@ import os
 import sys
 import requests
 
+# **************
+# * Constants
+# **************
+
 SiteName = "bialysztorm/familiada"
 
+# **************
+# * Version
+# **************
 
 def version():
     f = open(os.path.join(sys.path[0], "Butler-version.txt"),"r")
@@ -34,6 +41,10 @@ def version():
     f.close()
     return currVersion
 
+# **************
+# * Platforms
+# **************
+
 def platform():
     print("Select platform for push build to itch\n")
     print("[1] - Windows")
@@ -59,20 +70,27 @@ def mac(currVersion):
     # payload = {"content":"Version: "+currVersion+" was pushed to itch on Mac channel"}        
     # requests.post(DiscordHook, data=payload)
 
-action = platform()
-if action == '1':
-    windows(version())
-elif action == '2':
-    linux(version()) 
-elif action == '3':
-    mac(version())
-elif action == '4':
-    windows(version())
-    linux(version()) 
-    mac(version())
+# **************
+# * Main loop
+# **************
 
-# print(version())
-# TODO and mac
-# TODO Loop
-
-wait = input("Press Enter to continue.")
+action = '-1'
+while(action!='0'):
+    action = platform()
+    if action == '1':
+        windows(version())
+    elif action == '2':
+        linux(version()) 
+    elif action == '3':
+        mac(version())
+    elif action == '4':
+        windows(version())
+        linux(version()) 
+        mac(version())
+    elif action == '0':
+        continue
+    else:
+        print("Wrong option")
+    # print(version())
+    wait = input("Press Enter to continue.")
+    os.system("cls")
