@@ -7,6 +7,7 @@ import requests
 # **************
 
 SiteName = "bialysztorm/familiada"
+# DiscordHook = ''
 
 # **************
 # * Version
