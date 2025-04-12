@@ -1,0 +1,20 @@
+Id,Text
+startButton,Rozpocznij grę
+optionsButton,Opcje
+settingsTitle,Ustawienia
+musicVolume,Głośność muzyki
+sfxVolume,Głośność efektów
+showControls,Pokaż sterowanie
+returnToMenu,Wróć do menu
+controlsTitle,Sterowanie:
+controlLeftTeam,q - wybierz lewą drużynę
+controlNoTeam,w - wybierz brak drużyny
+controlRightTeam,e - wybierz prawą drużynę
+controlRevealAnswer,1-6 - odsłoń odpowiedź
+controlWrongAnswer,x - błędna odpowiedź
+controlFullyWrongAnswer,c - całkowicie błędna odpowiedź
+controlAwardPoints,s - przyznaj punkty
+controlPreviousQuestion,a - poprzednie pytanie
+controlNextQuestion,d - następne pytanie
+controlCancelLastAnswer,z - anuluj ostatnią odpowiedź (finał)
+controlShowJoke,j - wyświetl żart

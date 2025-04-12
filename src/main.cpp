@@ -17,6 +17,7 @@
 
 int main(int argc, char *argv[])
 {
+    qputenv("QML_XHR_ALLOW_FILE_READ", "1");
     set_qt_environment();
 
     QGuiApplication app(argc, argv);

@@ -27,8 +27,9 @@ qt6_add_qml_module(content
         sounds/familiada_intro.mp3
         sounds/familiada_sound.mp3
         sounds/final_time.mp3
-        data/jokes-pl_PL.txt
-        data/questions-pl_PL.txt
-        data/questions_num-pl_PL.txt
-        data/answers-pl_PL.txt
+        data/jokes.txt
+        data/questions.txt
+        data/questions_num.txt
+        data/answers.txt
+        data/ui.txt
 )

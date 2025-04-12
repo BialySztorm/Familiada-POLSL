@@ -1,4 +1,3 @@
-
 /*
 This is a UI file (.ui.qml) that is intended to be edited in Qt Design Studio only.
 It is supposed to be strictly declarative and only uses a subset of QML. If you edit
@@ -64,6 +63,8 @@ Item {
     property alias rect0: rectangle1.border.width
     property alias rect1: rectangle2.border.width
     property alias rect2: rectangle3.border.width
+
+    property var translations
 
     Rectangle {
         id: rectangle
@@ -750,7 +751,7 @@ Item {
 
         Button {
             id: controlsBtn
-            text: qsTr("Pokaż sterowanie")
+            text: translations ? (translations["showControls"] || qsTr("Show controls")) : qsTr("Show controls")
             anchors.left: parent.left
             anchors.bottom: parent.bottom
             font.family: "Familiada"
@@ -765,7 +766,7 @@ Item {
 
         Button {
             id: returnBtn
-            text: qsTr("Wróc do menu")
+            text: translations ? (translations["returnToMenu"] || qsTr("Return to menu")) : qsTr("Return to menu")
             anchors.right: parent.right
             anchors.bottom: parent.bottom
             font.family: "Familiada"
@@ -775,6 +776,12 @@ Item {
             Connections {
                 target: returnBtn
                 onClicked: root.changeState("screen1")
+            }
+        }
+        Connections {
+            target: root
+            onTranslationsUpdated: {
+                translations = root.translations;
             }
         }
     }

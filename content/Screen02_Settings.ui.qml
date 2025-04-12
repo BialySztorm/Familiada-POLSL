@@ -1,4 +1,3 @@
-
 /*
 This is a UI file (.ui.qml) that is intended to be edited in Qt Design Studio only.
 It is supposed to be strictly declarative and only uses a subset of QML. If you edit
@@ -12,6 +11,8 @@ import Familiada
 
 Item {
     id: screen02
+
+    property var translations
 
     Rectangle {
         id: rectangle
@@ -29,7 +30,7 @@ Item {
                 id: screenTitleText
                 color: "#ffffff"
                 Layout.columnSpan: 2
-                text: qsTr("Ustawienia")
+                text: translations ? (translations["settingsTitle"] || qsTr("Settings")) : qsTr("Settings")
                 font.pixelSize: parent.parent.width / 20
                 font.family: "Familiada"
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
@@ -37,7 +38,7 @@ Item {
             Text {
                 id: musicVolumeText
                 color: "#ffffff"
-                text: qsTr("Głośność muzyki")
+                text: translations ? (translations["musicVolume"] || qsTr("Music volume")) : qsTr("Music volume")
                 font.family: "Familiada"
                 font.pixelSize: parent.parent.width / 50
             }
@@ -49,7 +50,7 @@ Item {
             Text {
                 id: sfxVolumeText
                 color: "#ffffff"
-                text: qsTr("Głośność efektów")
+                text: translations ? (translations["sfxVolume"] || qsTr("Effects volume")) : qsTr("Effects volume")
                 font.pixelSize: parent.parent.width / 50
                 font.family: "Familiada"
             }
@@ -73,7 +74,7 @@ Item {
         }
         Button {
             id: controlsBtn
-            text: qsTr("Pokaż sterowanie")
+            text: translations ? (translations["showControls"] || qsTr("Show controls")) : qsTr("Show controls")
             anchors.left: parent.left
             anchors.bottom: parent.bottom
             font.family: "Familiada"
@@ -88,7 +89,7 @@ Item {
 
         Button {
             id: returnBtn
-            text: qsTr("wróć do menu")
+            text: translations ? (translations["returnToMenu"] || qsTr("Return to menu")) : qsTr("Return to menu")
             anchors.right: parent.right
             anchors.bottom: parent.bottom
             font.family: "Familiada"
@@ -98,6 +99,12 @@ Item {
             Connections {
                 target: returnBtn
                 onClicked: root.changeState("screen1")
+            }
+        }
+        Connections {
+            target: root
+            onTranslationsUpdated: {
+                translations = root.translations;
             }
         }
     }

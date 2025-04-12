@@ -17,6 +17,35 @@ Window {
     visible: true
     title: "Familiada"
 
+    property var translations: ({})
+
+    signal translationsUpdated()
+
+    function loadTranslations() {
+        var fileUrl = Qt.resolvedUrl("data/ui.txt");
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", fileUrl, false); // Synchronous request
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                var lines = xhr.responseText.split("\n");
+                for (var i = 1; i < lines.length; i++) {
+                    var line = lines[i].trim();
+                    if (line && line.indexOf(",") > -1) {
+                        var parts = line.split(",");
+                        var id = parts[0].trim();
+                        var text = parts[1].trim();
+                        if (id && text) {
+                            translations[id] = text;
+                        }
+                    }
+                }
+                translationsUpdated();
+            }
+        };
+        xhr.send();
+    }
+
+
     function changeState(stateName)
     {
         if(stateName === "screen1" && player.playbackState != MediaPlayer.PlayingState)
@@ -264,27 +293,36 @@ Window {
         }
     }
 
+    Component.onCompleted: {
+        loadTranslations()
+        player.play()
+    }
+
 
     Screen01_Main{
         id: mainScreen
         visible: true
         anchors.fill: parent
+        translations: root.translations
     }
     Screen02_Settings{
         id: settingsScreen
         visible:false
         anchors.fill: parent
+        translations: root.translations
     }
     Screen03_Game{
         id: gameScreen
         visible:false
         anchors.fill: parent
         Keys.onPressed: (event)=> { controller.keyPressEvent(event.key)}
+        translations: root.translations
     }
     Screen04_Controls {
         id: controls
         visible: false
         anchors.fill: parent
+        translations: root.translations
     }
     MediaPlayer {
         id: player
@@ -356,7 +394,6 @@ Window {
             }
         ]
     }
-    Component.onCompleted: player.play()
 
     Connections {
         target: controller

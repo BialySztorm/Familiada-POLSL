@@ -13,6 +13,8 @@ import Familiada
 Item {
     id: screen1
 
+    property var translations
+
     Rectangle {
         id: rectangle
         width: parent.width
@@ -26,7 +28,7 @@ Item {
         }
         Button {
             id: startBtn
-            text: qsTr("Rozpocznij grę")
+            text: translations ? (translations["startButton"] || qsTr("Start the game")) : qsTr("Start the game")
             anchors.left: parent.left
             anchors.bottom: parent.bottom
             font.family: "Familiada"
@@ -43,7 +45,7 @@ Item {
         }
         Button {
             id: optionsBtn
-            text: qsTr("Opcje")
+            text: translations ? (translations["optionsButton"] || qsTr("Options")) : qsTr("Options")
             anchors.right: parent.right
             anchors.bottom: parent.bottom
             font.family: "Familiada"
@@ -54,6 +56,12 @@ Item {
             Connections {
                 target: optionsBtn
                 onClicked: root.changeState("screen2")
+            }
+        }
+        Connections {
+            target: root
+            onTranslationsUpdated: {
+                translations = root.translations;
             }
         }
     }

@@ -10,7 +10,7 @@ Joke::Joke(QObject *parent)
     Id  = 0;
     Content = "";
     Author = "";
-    QFile inputFile(":/content/data/jokes-pl_PL.txt");
+    QFile inputFile(":/content/data/jokes.txt");
     if (inputFile.open(QIODevice::ReadOnly))
     {
         QTextStream in(&inputFile);

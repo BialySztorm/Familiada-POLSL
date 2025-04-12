@@ -24,7 +24,7 @@ void Game::reset()
     // odczytanie liczby pytań
     qint32 commonQuestionNum = 0, specialQuestionNum = 0;
 
-    QFile numFile(":/content/data/questions_num-pl_PL.txt");
+    QFile numFile(":/content/data/questions_num.txt");
     if (numFile.open(QIODevice::ReadOnly))
     {
         QTextStream in(&numFile);
@@ -47,7 +47,7 @@ void Game::reset()
     // losowanie pytań
     // pierwsze 2, kolejne 2 mnożnik 2 i 3, 5 finałowych
     QList<QList<QString>> tmp1;
-    QFile questionFile(":/content/data/questions-pl_PL.txt");
+    QFile questionFile(":/content/data/questions.txt");
     if (questionFile.open(QIODevice::ReadOnly))
     {
         QTextStream in(&questionFile);
@@ -116,7 +116,7 @@ void Game::reset()
 
     for(qint32 i = 0; i< questions.count(); i++)
     {
-        QFile answerFile(":/content/data/answers-pl_PL.txt");
+        QFile answerFile(":/content/data/answers.txt");
         if (answerFile.open(QIODevice::ReadOnly))
         {
             QTextStream in;
