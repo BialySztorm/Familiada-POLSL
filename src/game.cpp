@@ -146,9 +146,15 @@ void Game::reset()
         }
     }
 
-    // wypisanie pytań do pliku
     QString filename="Data.txt";
-    QFile file( filename );
+    QFile file(filename);
+    // usunięcie pliku data.txt jeśli istnieje
+    if (file.exists())
+    {
+        file.remove();
+    }
+
+    // wypisanie pytań do pliku
     if ( file.open(QIODevice::ReadWrite) )
     {
         QTextStream stream( &file );
