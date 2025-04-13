@@ -252,8 +252,19 @@ void Controller::processAnswer(qint32 x)
         {
             tmp2 /= 3;
         }
+        if(isAnswerRevealed[x-1])
+        {
+            tmp1 = "....................";
+            tmp2 = 0;
+            isAnswerRevealed[x-1] = false;
+            gameRef->substractScore(level-1,x);
+        }
+        else
+        {
+            isAnswerRevealed[x-1] = true;
+            gameRef->addScore(level-1,x);
+        }
         callSetAnswer(x,tmp1,tmp2);
-        gameRef->addScore(level-1,x);
         // play sfx
         callPlaySfxInQML("sounds/answer_good.mp3");
     }
@@ -288,6 +299,8 @@ void Controller::hideX()
     for(qint32 i = 1;i<=2; i++ )
         for(qint32 j = 1; j<=4; j++)
             callChangeXVisibility(i,j,false);
+    for(qint32 i = 0; i<5; i++)
+        isAnswerRevealed[i] = false;
 }
 
 void Controller::callPlaySfxInQML(QString src)

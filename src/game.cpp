@@ -190,6 +190,11 @@ void Game::addScore( qint32 question, qint32 answer)
     score0 += questions[question].getAnswerValue(answer);
 }
 
+void Game::substractScore( qint32 question, qint32 answer)
+{
+    score0 -= questions[question].getAnswerValue(answer);
+}
+
 qint32 Game::getScore(qint32 team)
 {
     if(team == 0)

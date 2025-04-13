@@ -16,6 +16,7 @@ public:
 
     void addScore(qint32 team);
     void addScore(qint32 question, qint32 answer);
+    void substractScore( qint32 question, qint32 answer);
     qint32 getScore(qint32 team);
     qint32 getAnswersNum(qint32 question);
     QString getAnswer(qint32 level, qint32 question);

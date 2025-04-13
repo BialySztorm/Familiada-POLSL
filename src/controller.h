@@ -25,6 +25,7 @@ private:
     qint32 teamMistakes[2];
     qint32 lastAnswer;
     bool isPointsAdded;
+    bool isAnswerRevealed[5];
     Game* gameRef;
 
     void processAnswer(qint32 x);
