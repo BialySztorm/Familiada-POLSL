@@ -175,13 +175,9 @@ void Game::reset()
 void Game::addScore(qint32 team)
 {
     if(team == 1)
-    {
         score1 += score0;
-    }
     else if(team == 2)
-    {
         score2 += score0;
-    }
     tmp = score0;
 }
 
@@ -190,13 +186,9 @@ void Game::undoScore(qint32 team)
     if(tmp <= 0 || team == 0)
         return;
     if(team == 1)
-    {
         score1 -= tmp;
-    }
     else if(team == 2)
-    {
         score2 -= tmp;
-    }
     tmp = 0;
 }
 
