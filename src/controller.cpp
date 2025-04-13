@@ -75,19 +75,27 @@ void Controller::keyPressEvent(qint32 key)
             gameRef->addScore(team);
             callChangeScore(team,gameRef->getScore(team));
             isPointsAdded = true;
+            teamScored = team;
+        }
+        else if(isPointsAdded && teamScored)
+        {
+            gameRef->undoScore(teamScored);
+            callChangeScore(teamScored,gameRef->getScore(teamScored));
+            isPointsAdded = false;
+            teamScored = 0;
         }
     }
     else if( key == Qt::Key_A )
     {
         lastAnswer = -1;
+
         if(level>1 && level<5)
         {
             level--;
-            if(!isPointsAdded && team)
+            if(!isPointsAdded && teamScored)
             {
-                // Add points
-                gameRef->addScore(team);
-                callChangeScore(team,gameRef->getScore(team));
+                gameRef->undoScore(teamScored);
+                callChangeScore(teamScored,gameRef->getScore(teamScored));
             }
             else
             {
@@ -109,6 +117,8 @@ void Controller::keyPressEvent(qint32 key)
             hideX();
             callPlaySfxInQML("sounds/familiada_between.mp3");
         }
+        team = 0;
+        callToggleSelection(0);
     }
     else if( key == Qt::Key_D )
     {
@@ -121,6 +131,7 @@ void Controller::keyPressEvent(qint32 key)
                 // Add points
                 gameRef->addScore(team);
                 callChangeScore(team,gameRef->getScore(team));
+                teamScored = team;
             }
             else
             {
@@ -147,6 +158,8 @@ void Controller::keyPressEvent(qint32 key)
                         callSetAnswerVisibility(i,false);
                     callSetAnswer(i,"....................",0);
                 }
+                team = 0;
+                callToggleSelection(0);
             }
             else
             {

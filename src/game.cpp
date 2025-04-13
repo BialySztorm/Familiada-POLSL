@@ -185,6 +185,22 @@ void Game::addScore(qint32 team)
     tmp = score0;
 }
 
+void Game::undoScore(qint32 team)
+{
+    if(tmp <= 0 || team == 0)
+        return;
+    if(team == 1)
+    {
+        score1 -= tmp;
+    }
+    else if(team == 2)
+    {
+        score2 -= tmp;
+    }
+    tmp = 0;
+}
+
+
 void Game::addScore( qint32 question, qint32 answer)
 {
     score0 += questions[question].getAnswerValue(answer);
@@ -238,22 +254,3 @@ void Game::resetScore()
 //        }
 //    }
 //}
-
-//void Game::undoScore(qint32 team)
-//{
-//    if(team == 1)
-//    {
-//        score1 -= tmp;
-//    }
-//    else if(team == 2)
-//    {
-//        score2 -= tmp;
-//    }
-//    tmp = 0;
-//}
-
-//void Game::undoScore(qint32 question, qint32 answer)
-//{
-//    score0 -= questions[question].getAnswerValue(answer);
-//}
-

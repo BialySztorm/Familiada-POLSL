@@ -22,6 +22,7 @@ public:
 private:
     qint32 level;
     qint32 team;
+    qint32 teamScored;
     qint32 teamMistakes[2];
     qint32 lastAnswer;
     qint32 lastQuestion;
