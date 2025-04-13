@@ -302,7 +302,7 @@ void Controller::processAnswer(qint32 x)
             callPlaySfxInQML("sounds/answer_wrong.mp3");
         }
         callSetAnswer(lastQuestion+6,tmp1,tmp2);
-        gameRef->addScore((lastQuestion)%5 + 3,x);
+        gameRef->addScore((lastQuestion-1)%5 + 4,x);
 
 
     }
@@ -331,7 +331,7 @@ void Controller::undoAnswer()
         {
             callSetAnswer(lastQuestion+6,"....................",0);
             if(lastAnswer > 0)
-                gameRef->substractScore((lastQuestion)%5 + 3,lastAnswer);
+                gameRef->substractScore((lastQuestion-1)%5 + 4,lastAnswer);
             lastQuestion--;
             lastAnswer = -1;
         }
