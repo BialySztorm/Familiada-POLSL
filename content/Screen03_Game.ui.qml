@@ -369,7 +369,8 @@ Item {
                 id: row7
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.horizontalCenter: parent.horizontalCenter
-                width: parent.width * 0.6
+                width: parent.width * 0.8
+                padding: parent.width * 0.03
                 height: parent.height
                 visible: false
                 Column {
