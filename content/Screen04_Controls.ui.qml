@@ -58,41 +58,47 @@ Item {
             }
             Text {
                 id: text6
-                text: translations ? (translations["controlWrongAnswer"] || qsTr("x - wrong answer")) : qsTr("x - wrong answer")
+                text: translations ? (translations["controlFinalWrongAnswer"] || qsTr("0 - wrong answer (final)")) : qsTr("0 - wrong answer (final)")
                 font.pixelSize: parent.width / 18
                 font.family: "Verdana"
             }
             Text {
                 id: text7
-                text: translations ? (translations["controlFullyWrongAnswer"] || qsTr("c - fully wrong answer")) : qsTr("c - fully wrong answer")
+                text: translations ? (translations["controlWrongAnswer"] || qsTr("x - wrong answer")) : qsTr("x - wrong answer")
                 font.pixelSize: parent.width / 18
                 font.family: "Verdana"
             }
             Text {
                 id: text8
-                text: translations ? (translations["controlAwardPoints"] || qsTr("s - award points")) : qsTr("s - award points")
+                text: translations ? (translations["controlFullyWrongAnswer"] || qsTr("c - fully wrong answer")) : qsTr("c - fully wrong answer")
                 font.pixelSize: parent.width / 18
                 font.family: "Verdana"
             }
             Text {
                 id: text9
-                text: translations ? (translations["controlPreviousQuestion"] || qsTr("a - previous question")) : qsTr("a - previous question")
+                text: translations ? (translations["controlAwardPoints"] || qsTr("s - award points")) : qsTr("s - award points")
                 font.pixelSize: parent.width / 18
                 font.family: "Verdana"
             }
             Text {
                 id: text10
+                text: translations ? (translations["controlPreviousQuestion"] || qsTr("a - previous question")) : qsTr("a - previous question")
+                font.pixelSize: parent.width / 18
+                font.family: "Verdana"
+            }
+            Text {
+                id: text11
                 text: translations ? (translations["controlNextQuestion"] || qsTr("d - next question")) : qsTr("d - next question")
                 font.pixelSize: parent.width / 18
                 font.family: "Verdana"
             }
 //            Text {
-//                id: text11
+//                id: text12
 //                text: translations ? (translations["controlCancelLastAnswer"] || qsTr("z - undo last answer (final)")) : qsTr("z - undo last answer (final)")
 //                font.pixelSize: parent.width / 18
 //            }
             Text {
-                id: text12
+                id: text13
                 text: translations ? (translations["controlShowJoke"] || qsTr("j - show joke")) : qsTr("j - show joke")
                 font.pixelSize: parent.width / 18
                 font.family: "Verdana"

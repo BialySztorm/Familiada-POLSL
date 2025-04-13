@@ -11,6 +11,7 @@ controlLeftTeam,q - wybierz lewą drużynę
 controlNoTeam,w - wybierz brak drużyny
 controlRightTeam,e - wybierz prawą drużynę
 controlRevealAnswer,1-6 - odsłoń odpowiedź
+controlFinalWrongAnswer,0 - błędna odpowiedź (finał)
 controlWrongAnswer,x - błędna odpowiedź
 controlFullyWrongAnswer,c - całkowicie błędna odpowiedź
 controlAwardPoints,s - przyznaj punkty
