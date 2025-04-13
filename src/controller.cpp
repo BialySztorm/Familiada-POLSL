@@ -28,11 +28,10 @@ void Controller::keyPressEvent(qint32 key)
         // highlight the selected team
         callToggleSelection(2);
     }
-//    else if( key == Qt::Key_Z )
-//    {
-//        // TODO undo final mistake
-//        // hide answer, substract points
-//    }
+    else if( key == Qt::Key_Z )
+    {
+        undoAnswer();
+    }
     else if( key == Qt::Key_X )
     {
         if(team && teamMistakes[team-1]<3 && level<5)
@@ -80,6 +79,7 @@ void Controller::keyPressEvent(qint32 key)
     }
     else if( key == Qt::Key_A )
     {
+        lastAnswer = -1;
         if(level>1 && level<5)
         {
             level--;
@@ -112,6 +112,7 @@ void Controller::keyPressEvent(qint32 key)
     }
     else if( key == Qt::Key_D )
     {
+        lastAnswer = -1;
         if(level<5)
         {
             level ++;
@@ -202,6 +203,7 @@ void Controller::reset()
     teamMistakes[0] = 0;
     teamMistakes[1] = 0;
     lastAnswer = 0;
+    lastQuestion = 0;
     isPointsAdded = false;
 
     hideX();
@@ -263,10 +265,10 @@ void Controller::processAnswer(qint32 x)
         {
             isAnswerRevealed[x-1] = true;
             gameRef->addScore(level-1,x);
+            // play sfx
+            callPlaySfxInQML("sounds/answer_good.mp3");
         }
         callSetAnswer(x,tmp1,tmp2);
-        // play sfx
-        callPlaySfxInQML("sounds/answer_good.mp3");
     }
     else
     {
@@ -275,22 +277,52 @@ void Controller::processAnswer(qint32 x)
         qint32 tmp2 = 0;
         if(x != 0)
         {
-            tmp1 = gameRef->getAnswer(lastAnswer%5+4,x);
-            tmp2 = gameRef->getPoints(lastAnswer++%5+4,x);
+            tmp1 = gameRef->getAnswer(lastQuestion%5+4,x);
+            tmp2 = gameRef->getPoints(lastQuestion++%5+4,x);
             // play sfx
             callPlaySfxInQML("sounds/answer_good_1.mp3");
         }
         else
         {
-            lastAnswer++;
+            lastQuestion++;
             // play sfx
             callPlaySfxInQML("sounds/answer_wrong.mp3");
         }
-        callSetAnswer(lastAnswer+6,tmp1,tmp2);
-        gameRef->addScore((lastAnswer-1)%5 + 3,x);
+        callSetAnswer(lastQuestion+6,tmp1,tmp2);
+        gameRef->addScore((lastQuestion)%5 + 3,x);
+
+
     }
     // add points
 
+    callChangeScore(0,gameRef->getScore(0));
+
+    lastAnswer = x;
+}
+
+void Controller::undoAnswer()
+{
+    if(level < 5)
+    {
+        if(lastAnswer > 0)
+        {
+            callSetAnswer(lastAnswer,"....................",0);
+            gameRef->substractScore(level-1,lastAnswer);
+            isAnswerRevealed[lastAnswer-1] = false;
+            lastAnswer = 0;
+        }
+    }
+    else
+    {
+        if(lastAnswer >=0)
+        {
+            callSetAnswer(lastQuestion+6,"....................",0);
+            if(lastAnswer > 0)
+                gameRef->substractScore((lastQuestion)%5 + 3,lastAnswer);
+            lastQuestion--;
+            lastAnswer = -1;
+        }
+    }
     callChangeScore(0,gameRef->getScore(0));
 }
 
@@ -299,7 +331,7 @@ void Controller::hideX()
     for(qint32 i = 1;i<=2; i++ )
         for(qint32 j = 1; j<=4; j++)
             callChangeXVisibility(i,j,false);
-    for(qint32 i = 0; i<5; i++)
+    for(qint32 i = 0; i<6; i++)
         isAnswerRevealed[i] = false;
 }
 

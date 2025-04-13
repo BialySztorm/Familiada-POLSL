@@ -17,5 +17,5 @@ controlFullyWrongAnswer,c - całkowicie błędna odpowiedź
 controlAwardPoints,s - przyznaj punkty
 controlPreviousQuestion,a - poprzednie pytanie
 controlNextQuestion,d - następne pytanie
-controlCancelLastAnswer,z - anuluj ostatnią odpowiedź (finał)
+controlCancelLastAnswer,z - anuluj ostatnią odpowiedź
 controlShowJoke,j - wyświetl żart

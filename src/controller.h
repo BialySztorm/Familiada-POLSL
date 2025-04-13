@@ -24,11 +24,13 @@ private:
     qint32 team;
     qint32 teamMistakes[2];
     qint32 lastAnswer;
+    qint32 lastQuestion;
     bool isPointsAdded;
-    bool isAnswerRevealed[5];
+    bool isAnswerRevealed[6];
     Game* gameRef;
 
     void processAnswer(qint32 x);
+    void undoAnswer();
     void hideX();
 
     void callPlaySfxInQML(QString src);

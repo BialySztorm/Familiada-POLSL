@@ -92,11 +92,11 @@ Item {
                 font.pixelSize: parent.width / 18
                 font.family: "Verdana"
             }
-//            Text {
-//                id: text12
-//                text: translations ? (translations["controlCancelLastAnswer"] || qsTr("z - undo last answer (final)")) : qsTr("z - undo last answer (final)")
-//                font.pixelSize: parent.width / 18
-//            }
+            Text {
+                id: text12
+                text: translations ? (translations["controlCancelLastAnswer"] || qsTr("z - undo last answer")) : qsTr("z - undo last answer")
+                font.pixelSize: parent.width / 18
+            }
             Text {
                 id: text13
                 text: translations ? (translations["controlShowJoke"] || qsTr("j - show joke")) : qsTr("j - show joke")
